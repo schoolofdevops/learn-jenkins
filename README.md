@@ -2,6 +2,8 @@
 
 
 * [Install Jenkins on Centos 6.7](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/install_jenkins.md)  
+* [Jenkins Systems Configurations](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/jenkins_configurations.md)
+* [Installing Plugins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/install_plugins.md)
 * [TOPIC](LINK)
 
 
