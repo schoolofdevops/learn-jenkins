@@ -46,7 +46,7 @@ Review and click on save to go to project page.
 
 ![Project Page](images/chap4/project_page.jpg)
 
-## Running the Job
+## Building Job for the First Time
 
 Click on **Build Now** to launch a build. Once the build is started, you would see the status in the **Build History** section.
 
