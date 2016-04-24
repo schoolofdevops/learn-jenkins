@@ -11,7 +11,7 @@ To configure JDK and Maven,
 * From **Manage Jenkins** select  **Configure System**
 * Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "Java 7".
 
-![Adding JKD](images/chap7/jdk.jpg)
+![Adding JDK](images/chap7/jdk.jpg)
 
 * Check the box which mentions "Install Automatically"  
 * From "Install from java.sun.com", select the Version of java that you wish to be installed.
