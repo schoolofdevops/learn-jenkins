@@ -5,6 +5,9 @@ Lets create 2 more jobs so that we could connect those together to setup a mock 
 
 To create new jobs, you could click on create items, name the job and select the last option which says **Copy from Another Job**
 
+![Jobs](images/chap6/copy_from.png)
+
+
 For this tutorial, lets create jobs by name **job2** and **job3** which should be copies of job1.  
 
 ![Jobs](images/chap6/3_jobs.jpg)

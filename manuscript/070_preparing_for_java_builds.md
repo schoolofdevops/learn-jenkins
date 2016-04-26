@@ -11,11 +11,14 @@ To configure JDK and Maven,
 * From **Manage Jenkins** select  **Configure System**
 * Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "Java 7".
 
-![Adding JDK](images/chap7/jdk.jpg)
+![Adding JDK](images/chap7/jdk.png)
 
 * Check the box which mentions "Install Automatically"  
 * From "Install from java.sun.com", select the Version of java that you wish to be installed.
 * Accept License and click on option to provide Oracle Account credentials.
+
+![Adding JDK](images/chap7/jdk_creds.png)
+
 * You would have to create a Oracle account, add credentials (email/pass) and have the license accepted in order for JDK to be installed on behalf of you by Jenkins.
 * Click on **Apply** button to save the configurations and continue with the next configurations on the same screen.
 
