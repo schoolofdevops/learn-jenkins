@@ -40,7 +40,7 @@ Either Token or User/Pass based on your version of SonarQube.
 
 Click on Apply.
 
-![Token ](images/chap11/plugin_config.jpg)
+![Token ](images/chap11/plugin_config.png)
 
 
 ### Create A Job to run Sonar Analysis
