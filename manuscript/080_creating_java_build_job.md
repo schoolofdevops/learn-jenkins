@@ -40,4 +40,22 @@ In addition to compile, following are the goals Maven project could take.
 1. deploy
 
 
-* Save the job and clicl on **Build Now**.
+* Save the job and clicl on **Build Now**.  Following is a snippet from the output of the build job. 
+
+
+
+```
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/build/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.216 s
+[INFO] Finished at: 2016-04-27T17:11:30+00:00
+[INFO] Final Memory: 19M/240M
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving /var/jenkins_home/workspace/build/pom.xml to com.example.app/maven-app/3.0-release/maven-app-3.0-release.pom
+channel stopped
+Finished: SUCCESS
+
+```

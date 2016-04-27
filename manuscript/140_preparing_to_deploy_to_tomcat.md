@@ -1,5 +1,8 @@
 
-Tomcat Deploy
+# Preparing Tomcat for Deployment
+
+To deploy to tomcat, we first need to create a manager user for tomcat. 
+
 
 1. Update tomcat-users.xml, restart tomcat
 ```
