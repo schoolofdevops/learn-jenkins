@@ -11,10 +11,8 @@
 * [Chapter 9: Integrating with Artifactory](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/090_resolving_libs_from_artifactory.md)
 * [Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md)
 * [Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md)
-* [Chapter 12: Creating Deploy Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_create_deploy_job.md)
-* [Chapter 13: Archiving Artifacts](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_archiving_artifacts.md)
-* [Chapter 14: Preparing Tomcat for Deployment](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/140_preparing_to_deploy_to_tomcat.md)
-* [Chapter 15: Deploying to Tomcat](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/150_deploy_to_tomcat.md)
+* [Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)
+
 
 ### License (CC-BY-NC-ND)
 
