@@ -1,6 +1,16 @@
 ## Static Code Analysis with SonarQube
 
-### Install  Sonarqube Plugin
+## Running SonarQube as a Docker Container
+
+We assume that docker image for SonarQube is being pulled from [docker hub](https://hub.docker.com/_/sonarqube/)
+
+Now use docker run command with port mapping to run SonarQube docker container.
+
+```
+$ docker run -d -p 9000:9000 -p 9092:9092 sonarqube
+```
+
+### Install  Sonarqube Plugin in Jenkins
 
 From Manage Jenkins => Manage Plugins, install SOnarQube plugin from Available tab.
 
@@ -55,7 +65,7 @@ Review Job Configurations
 * Check Resolve Artifacts from Artifactory from Build Environment. Provide the same configurations as build job that we configured earlier to connect with artifactory.
 * From Build Triggers, select **Build After Other Projects are Built** and provide dependency on "build".
 * From Build Environment , check  **Prepare SonarQube Scanner environment**. If you do not see this option, you will have to go back to system configurations, go to sonarqube server options and check the box which starts with "Enable injection of SonarQube....."
-* From **Build**, select **Top Level Maven Targets**. From drop down menu, choose the version of Maven to use. In the Goals, provide following line,
+* From **Build**, select **Invoke top-level Maven targets**. From drop down menu, choose the version of Maven to use. In the Goals, provide following line,
 
 ```
 

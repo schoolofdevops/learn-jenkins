@@ -5,38 +5,52 @@ We have setup the jobs which compile code and then run unit tests, static code a
 
 ## Preparing Tomcat for Deployment
 
-We already have tomcat running as a docker container.
+### Running SonarQube as a Docker Container
+
+We assume that docker image for Tomcat is being pulled from [docker hub](https://hub.docker.com/_/tomcat/)
 
 To deploy to tomcat, we first need to create a manager user for tomcat.
 
+We already created a `tomcat-users.xml` in `/tomcat/conf/` of host machine.
 
-1. Update tomcat-users.xml, restart tomcat
-```
-docker exec -it tomcat /bin/bash
-apt-get update
-apt-get install vim -yq
-```
-Replace the contents of conf/tomcat-users.xml with the configs from the following url
-https://gist.github.com/initcron/e95c2b96ec258e02c424dd488c0079c1
-
-Restart tomcat container
+The tomcat-users.xml file contains,
 
 ```
-docker stop tomcat
-docker start tomcat
+<?xml version='1.0' encoding='utf-8'?>
 
+<tomcat-users xmlns="http://tomcat.apache.org/xml"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+              version="1.0">
+
+  <role rolename="admin-gui"/>
+  <role rolename="manager-gui"/>
+  <user username="admin" password="s3cret" roles="admin-gui,manager-gui,manager-script"/>
+
+</tomcat-users>
 ```
 
+This file need to be mounted inside the container in `/usr/local/tomcat/conf/`
 
-2. Install Deploy to Container Plugin
+Now use docker run command with port mapping and volume mount option to run Tomcat docker container.
+
+```
+$ docker run -d -p 8888:8080 -v /tomcat/conf/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
+```
+
+2. Install Deploy to Container Plugin in jenkins
 3. From post build action, select deploy to EAR/WAR Container
      context: cmad
-     tomcat url : http://ip:8080
+     tomcat url : http://ipadress:8888
      user: admin
-     pass: pass/admin
+     pass: s3cret
+![deploy to Container](images/chap12/deploy to Container.png)
 
-Deploy Jobs Steps:
-1. Create deploy job
-2. Archive Artifacts
-3. Deploy to Tomcat
-4. Send  Artifacts to Artifactory
+4. From post build action, select Deploy artifacts to Artifactory
+
+  Refresh to get the target repositories
+![Deploy artifacts to Artifactory](images/chap12/Deploy artifacts to Artifactory.png)
+
+5. Verify browser for Deployment
+
+  ![Deployment](images/chap12/Deployment.png)
