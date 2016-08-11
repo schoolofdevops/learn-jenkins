@@ -8,11 +8,21 @@ Following video explains the usefulness of Artifactory to share libraries and ar
 
 In addition, Artifactory could be used as a local repository for storing rpms, debs, docker images, gems, pythong packages etc.
 
+## Running Artifactory as a Docker Container
+
+We assume that docker image for open source artifactory is being pulled from [jfrog.com](https://www.jfrog.com/open-source/)
+
+Now use docker run command with port mapping to run artifatcory docker container.
+
+```
+$ docker run -d -p 8081:8081 docker.bintray.io/jfrog/artifactory-oss
+```
+
 ## Integrating Artifactory with Jenkins
 
 Artifactory could be used for two purposes,
-1. Resolving Libraries/Packages From
-1. Pushing build artifacts to
+1. Resolving Libraries/Packages `From`
+1. Pushing build artifacts `To`
 
 In this chapter, we are going to start using Artifactory as a local repository  to resolve libraries from.
 

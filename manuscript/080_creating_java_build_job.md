@@ -1,4 +1,4 @@
-#Chapter 8: Creating  Build Job for a Java Project
+# Chapter 8: Creating  Build Job for a Java Project
 
 In this chapter, we are going to create a job to build/compile a sample java application with maven.
 
@@ -40,7 +40,7 @@ In addition to compile, following are the goals Maven project could take.
 1. deploy
 
 
-* Save the job and clicl on **Build Now**.  Following is a snippet from the output of the build job. 
+* Save the job and clicl on **Build Now**.  Following is a snippet from the output of the build job.
 
 
 

@@ -9,9 +9,9 @@ Running java builds with maven would require additional preparations. Maven shou
 
 ## Configuring Existing OpenJDk
 * From **Manage Jenkins** select  **Configure System**
-* Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "OpenJDK 8".
-* Uncheck **Install Automatically** and provide JAVA_HOME 
-e.g.  /usr/lib/jvm/java-1.8-openjdk
+* Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "OpenJDK 7".
+* Uncheck **Install Automatically** and provide JAVA_HOME
+e.g.  /usr/lib/jvm/java-1.7.0-openjdk-amd64/
 ![Adding JDK](images/chap7/openjdk.png)
 
 
@@ -45,10 +45,4 @@ To have Maven installed automatically,
 
 Thats it. Maven and JDK will automatically be installed when you create a project with java build.
 
-T> ## JDK and Maven are not immediately Installed
-T>
-T> after providing these configurations. Jenkins
-T>
-T> would call the procedures to install these
-T>
-T> when you create a Job which uses JDK/Maven
+**Note:** JDK and Maven are not immediately Installed after providing these configurations. Jenkins would call the procedures to install these when you create a Job which uses JDK/Maven

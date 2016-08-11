@@ -1,8 +1,5 @@
 # Jenkins configurations
 
-
-
-
 ## Getting Familiar with Jenkins Console
 When you login to jenkins for the first time, following is the screen you would see.
 ![Jenkins Welcome Screen](images/configurations/jenkins_console.jpg)
@@ -10,7 +7,7 @@ When you login to jenkins for the first time, following is the screen you would 
 * On the left side of the screen, on top is the menu to  create new projects, to manage jenkins, to create users etc.
 * Just below the menu is the build queue. All  jobs scheduled to run get added to the queue and would appear here.  
 * Below build queue is the build executor status. This shows the status of the jobs being executed in real time.
-* Bottom left of the page is the information about jenkins displayed.
+* Bottom right of the page is the information about jenkins version displayed.
 
 ## Configuring Global Security
 
