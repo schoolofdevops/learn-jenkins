@@ -13,6 +13,7 @@ Jenkins requires Java Development Kit to be installed first.
 * Installing OpenJDK 7
 
   ```
+  $ sudo apt-get install add-apt-repository
   $ sudo add-apt-repository ppa:openjdk-r/ppa
   $ sudo apt-get update
   $ sudo apt-get install openjdk-8-jdk
