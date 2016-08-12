@@ -8,15 +8,22 @@ Flow:
 1. Artifactory
 1. Artifactory integration to resolve libs
 1. Create Test Job - test
-1. SonarQube
-1. Jenkins Integration with SonarQube
-1. Setup Tomcat Admin access
-1. Deploy Plugin for Containers
-1. Setup Deploy to tomcat
-1. Push Artifacts to Artifactory
-1. Docker Deploy ?
+1. Static Code Analysis with SonarQube
+1. Deploying to tomcat
+1. Deploy Using Docker
 
+What will you learn
 
+1. **Git** Integration with Jenkins
+1. Using  **Jenkins** to automate workflows 1. Setting up a CI and CD process for a sample java project.
+1. Using **Artifactory** for fetching libs from and push build **Artifacts** to
+1. Using SonarQube for Static Code Analysis
+1. Deploying to **Tomcat**
+1. Running containers with Docker
+2. Docker **deployment** process
+
+TODO
+Setup deployment with Docker Compose, Swarm, Consul etc. 
 
 http://192.168.5.10:8080/job/build/build?token=j4jthgiop45o34mkm0jrege
 

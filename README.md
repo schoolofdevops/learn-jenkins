@@ -1,7 +1,7 @@
 # Jenkins Primer for a Devops Engineer
 
 
-* [Chapter 2: Install Jenkins on Centos 6.7](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md)  
+* [Chapter 2: Setting up Learning Environment 6.7](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md)  
 * [Chapter 3: Jenkins Systems Configurations](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/030_configure_jenkins.md)
 * [ Chapter 4: Creating First Project with Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/040_creating_first_job.md)
 * [Chapter 5: Adding Build Triggers ](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/050_add_build_triggers.md)
