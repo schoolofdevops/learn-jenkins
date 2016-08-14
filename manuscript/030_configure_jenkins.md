@@ -51,3 +51,8 @@ When you login to jenkins for the first time, following is the screen you would 
   ![Searching for Plugins](images/plugins/searching_for_plugins.jpg)  
   * Scroll down till you see "Git Plugin" in the list, select it and click on "Download and install after restart"
   ![Searching for Plugins](images/plugins/install_git_plugin.jpg)
+
+  ----
+  <center>[Chapter 2: Install Jenkins **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md) <<<==
+
+  <center>==>>> [**Next** Chapter 4: Creating First Project with Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/040_creating_first_job.md)

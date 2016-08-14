@@ -133,3 +133,6 @@ Now this contaner run in a background with port mapping 80:80.
   * By choosing docker dashboard, will open up new page displaying the complete information about other containers.
 
     ![Dashboard](images/monitoring/19.png)
+
+    ----
+    <center>[Chapter 12: Deploying to Tomcat Job **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md) <<<==

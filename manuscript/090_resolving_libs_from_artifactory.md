@@ -63,13 +63,14 @@ Validate that the artifacts are being resolved from Artifactory by running a new
 
 
 ```
-
 [output snippet]
-
 
 [INFO] Downloaded: http://52.39.130.66:8081/artifactory/libs-release/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom (0 B at 0.0 KB/sec)
 [INFO] Downloading: http://52.39.130.66:8081/artifactory/libs-release/org/apache/maven/maven-parent/22/maven-parent-22.pom
 [INFO] Downloaded: http://52.39.130.66:8081/artifactory/libs-release/org/apache/maven/maven-parent/22/maven-parent-22.pom (0 B at 0.0 KB/sec)
-
-
 ```
+
+----
+<center>[Chapter 8: Creating Java Build Project **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/080_creating_java_build_job.md) <<<==
+
+<center>==>>> [**Next** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md)
