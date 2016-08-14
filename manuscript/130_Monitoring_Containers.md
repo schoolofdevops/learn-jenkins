@@ -134,5 +134,5 @@ Now this contaner run in a background with port mapping 80:80.
 
     ![Dashboard](images/monitoring/19.png)
 
-    ----
-    <center>[Chapter 12: Deploying to Tomcat Job **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md) <<<==
+----
+[Chapter 12: Deploying to Tomcat Job **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md) :point_left:

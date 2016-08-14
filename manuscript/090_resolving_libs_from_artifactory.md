@@ -71,6 +71,6 @@ Validate that the artifacts are being resolved from Artifactory by running a new
 ```
 
 ----
-<center>[Chapter 8: Creating Java Build Project **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/080_creating_java_build_job.md) <<<==
+[Chapter 8: Creating Java Build Project **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/080_creating_java_build_job.md) :point_left:
 
-<center>==>>> [**Next** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md)
+:point_right: [**Next** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md)

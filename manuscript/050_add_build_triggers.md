@@ -26,6 +26,6 @@ Similar to creating cronjobs or scheduled jobs its possible to define a run time
 This option allows jenkins to regularly check the source code management system e.g. a remote git repository to check if there are any updates, and launch a job based on it.  Ideally  post commit hooks/webhooks with git should trigger the builds, howeever it may not always be possible. E.g. if you are hosting jenkins inside a private network, which is not reachable by git repository hosted on the cloud, triggering a webhook will not be possible. In such cases the next best option is to poll git repository at a regular interval and trigger the builds.
 
 ----
-<center>[Chapter 4: Creating First Project with Jenkins **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/040_creating_first_job.md) <<<==
+[Chapter 4: Creating First Project with Jenkins **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/040_creating_first_job.md) :point_left:
 
-<center>==>>> [**Next** Chapter 6: Building a Pipeline](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/060_building_jobs_pipeline.md)
+:point_right: [**Next** Chapter 6: Building a Pipeline](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/060_building_jobs_pipeline.md)

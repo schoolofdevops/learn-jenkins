@@ -55,6 +55,6 @@ Once build is finished, click on the build number which starts with # . Clicking
 ![Console Output](images/chap4/console_output.jpg)
 
 ----
-<center>[Chapter 3: Jenkins Systems Configurations **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/030_configure_jenkins.md) <<<==
+[Chapter 3: Jenkins Systems Configurations **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/030_configure_jenkins.md) :point_left:
 
-<center>==>>> [**Next** Chapter 5: Adding Build Triggers](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/050_add_build_triggers.md)
+:point_right: [**Next** Chapter 5: Adding Build Triggers](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/050_add_build_triggers.md)

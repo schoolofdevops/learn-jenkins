@@ -56,7 +56,7 @@ $ docker run -d -p 8888:8080 -v /tomcat/conf/tomcat-users.xml:/usr/local/tomcat/
   ![Deployment](images/chap12/Deployment.png)
 
   ----
-  <center>[Chapter 11: Static Code Analysis with SonarQube
-   **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md) <<<==
+[Chapter 11: Static Code Analysis with SonarQube
+ **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md) :point_left:
 
-  <center>==>>> [**Next** Chapter 13: Monitoring Containers Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_Monitoring_Containers.md)
+:point_right: [**Next** Chapter 13: Monitoring Containers Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_Monitoring_Containers.md)

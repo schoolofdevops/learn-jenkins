@@ -48,6 +48,6 @@ Thats it. Maven and JDK will automatically be installed when you create a projec
 **Note:** JDK and Maven are not immediately Installed after providing these configurations. Jenkins would call the procedures to install these when you create a Job which uses JDK/Maven
 
 ----
-<center>[Chapter 6: Building a Pipeline **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/060_building_jobs_pipeline.md) <<<==
+[Chapter 6: Building a Pipeline **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/060_building_jobs_pipeline.md) :point_left:
 
-<center>==>>> [**Next** Chapter 8: Creating Java Build Project](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/080_creating_java_build_job.md)
+:point_right: [**Next** Chapter 8: Creating Java Build Project](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/080_creating_java_build_job.md)
