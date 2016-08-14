@@ -26,15 +26,15 @@ A  typical  style jenkins jobs has the following sections.
 ## Creating a Simple Job
 Lets now create a simple job using jenkins to run a hello world program.
 
-1. From Jenkins Main page, click on **New Item**
-1. Provide a name to the project in Item Name i.e. "job1". Check against Free Style Project.
+  1. From Jenkins Main page, click on **New Item**  
+  1. Provide a name to the project in Item Name i.e. "job1". Check against Free Style Project.  
 
 ![ Naming Jenkins Job ](images/chap4/job_name.jpg)
 
 Next screen opens the job configuration page. On the job configuration page,
-1. Add job description .e.g "Our first Jenkins Job"
-1. Skip Source Code Management and Build Triggers, and scroll down to **Build** configurations.
-1. From "Add Build Step" select **Execute Shell** and provide commands to execute. Since this  is a  mock job, you could provide following sample code,
+  1. Add job description .e.g "Our first Jenkins Job"  
+  1. Skip Source Code Management and Build Triggers, and scroll down to **Build** configurations.  
+  1. From "Add Build Step" select **Execute Shell** and provide commands to execute. Since this  is a  mock job, you could provide following sample code,  
 
 ```
 #!/bin/bash
@@ -42,9 +42,11 @@ echo "Hello World !"
 sleep 10
 
 ```  
+
 Review and click on save to go to project page.
 
 ![Project Page](images/chap4/project_page.jpg)
+
 
 ## Building Job for the First Time
 

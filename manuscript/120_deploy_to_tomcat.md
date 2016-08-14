@@ -9,11 +9,11 @@ We have setup the jobs which compile code and then run unit tests, static code a
 
 We assume that docker image for Tomcat is being pulled from [docker hub](https://hub.docker.com/_/tomcat/)
 
-To deploy to tomcat, we first need to create a manager user for tomcat.
+To deploy to tomcat, we first need to create user configurations to enable  tomcat admin UI.
 
-We already created a `tomcat-users.xml` in `/tomcat/conf/` of host machine.
+Lets create a  `tomcat-users.xml` in on the docker host machine.
 
-The tomcat-users.xml file contains,
+This tomcat-users.xml file contains,
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
@@ -35,10 +35,10 @@ This file need to be mounted inside the container in `/usr/local/tomcat/conf/`
 Now use docker run command with port mapping and volume mount option to run Tomcat docker container.
 
 ```
-$ docker run -d -p 8888:8080 -v /tomcat/conf/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
+$ docker run -d -p 8888:8080 -v tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
 ```
 
-2. Install Deploy to Container Plugin in jenkins
+2. Install **Deploy to Container** Plugin in jenkins
 3. From post build action, select deploy to EAR/WAR Container
      context: cmad
      tomcat url : http://ipadress:8888

@@ -33,7 +33,7 @@ When you login to jenkins for the first time, following is the screen you would 
 
  In this tutorial, we are going to learn a simple process to install plugins. As part of this, we will end us installing a plugin which would help us integrate jenkins with our git repository.
 
- ## Exploring Plugins Configurations
+### Exploring Plugins Configurations
  * From "Manage Jenkins", select  "Manage Plugins" option.  
  * On the Manage Plugins pane you would see the following tabs,
    * Updates
