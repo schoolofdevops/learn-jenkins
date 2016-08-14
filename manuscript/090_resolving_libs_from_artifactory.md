@@ -18,11 +18,20 @@ Now use docker run command with port mapping to run artifatcory docker container
 $ docker run -d -p 8081:8081 docker.bintray.io/jfrog/artifactory-oss
 ```
 
+Artifactory should come up on the following URL
+
+http://192.168.9.10:8081/artifactory
+
+Default Credentials:
+
+username : admin  
+password : password  
+
 ## Integrating Artifactory with Jenkins
 
-Artifactory could be used for two purposes,
-1. Resolving Libraries/Packages `From`
-1. Pushing build artifacts `To`
+Artifactory could be used for two purposes,  
+  1. Resolving Libraries/Packages `From`  
+  1. Pushing build artifacts `To`  
 
 In this chapter, we are going to start using Artifactory as a local repository  to resolve libraries from.
 
@@ -42,15 +51,17 @@ Following is a screenshot of the Artifactory console
 * Manage Jenkins -> Configure System -> Artifactory -> Add
 * Add Artifactory details and Test Connection
 
-e.g.
-   uri: http://HOSTNAME:8081/artifactory
-   port: 8081
-   user: admin
-   pass: password
+e.g.  
+   uri: http://HOSTNAME:8081/artifactory  
+   port: 8081  
+   user: admin  
+   pass: password  
 
 
 ![Configuring  Artifactory Plugin](images/chap9/artifactory_configs.jpg)
 
+
+Once connection test to Artifactory server is successful, save the configuration page and go back to the main page.  
 
 ## Resolve Artifacts from Artifactory
 
@@ -59,7 +70,7 @@ Configure build job, and from build environment select **Resolve artifacts from 
 
 ![Resolve Artifacts from   Artifactory ](images/chap9/resolve.png)
 
-Validate that the artifacts are being resolved from Artifactory by running a new building and checking the console output.
+Validate that the artifacts are being resolved from Artifactory by running a new build and checking the console output.
 
 
 ```
