@@ -12,6 +12,7 @@
 * [Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md)
 * [Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md)
 * [Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)
+* [Chapter 13: Monitoring Containers Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_Monitoring_Containers.md)
 
 
 ### License (CC-BY-NC-ND)
