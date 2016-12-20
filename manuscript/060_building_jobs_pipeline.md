@@ -47,6 +47,7 @@ To install this plugin,
 * From **Manage Jenkins** select **Manage Plugins**
 * Click on **Available** tab and start typing "pipeline" int he filter box. No need to press enter
 * Check the box against **Build Pipeline Plugin**, the second option, and click on the button at the bottom to "Download and install after restart".
+* If you don't see this plugin in the *Available* list then check the *Installed* list to see if it is installed already
 
 ![Install Build Pipeline Plugin](images/chap6/pipeline_plugin.jpg)
 
