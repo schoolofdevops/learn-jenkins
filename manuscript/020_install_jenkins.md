@@ -163,7 +163,7 @@ If the above command goes through without errors, you are all set.
 
 After installing docker, pull Jenkins docker image from [docker hub](https://hub.docker.com/_/jenkins/)
 
-Before running the Jenkins from Docker, create the following directory for mounting volume [Ref: Mount Volume](https://docs.docker.com/engine/tutorials/dockervolumes/)
+Before running the Jenkins from Docker, create the following directory for mounting volume. [Ref: Mount Volume](https://docs.docker.com/engine/tutorials/dockervolumes/)
 
 ```
 mkdir /var/jenkins_home
@@ -178,6 +178,16 @@ docker run -d --name jenkins -v /var/jenkins_home:/var/jenkins_home -p 8080:8080
 
 If you install it using the instructions above, find out the IP address and go to http://YOUR_IP_ADDRESS:8080 to access jenkins UI.
 
+After that you have to select install
+To start/stop jenkins with docker, use the following commands,
+
+```
+docker start jenkins
+docker stop jenkins
+```
+
+## Common Post Installation steps
+
 After the installation, you will be asked for password. The password will be saved in the following file.
 
 ```
@@ -185,10 +195,10 @@ After the installation, you will be asked for password. The password will be sav
 ```
 ![Unlock Jenkins](images/chap2/Unlock_Jenkins.png)
 
-After that you have to select install 
-To start/stop jenkins with docker, use the following commands,
+Create Admin user
 
-```
-docker start jenkins
-docker stop jenkins
-```
+![Admin](images/chap2/Create_Admin.png)
+
+Now we have successfully installed Jenkins and we can proceed with configurations
+
+![Final](images/chap2/Complete_Install.png)
