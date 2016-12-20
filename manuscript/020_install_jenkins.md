@@ -186,7 +186,7 @@ docker start jenkins
 docker stop jenkins
 ```
 
-## Common Post Installation steps
+## Common Post Installation Steps
 
 After the installation, you will be asked for password. The password will be saved in the following file.
 
