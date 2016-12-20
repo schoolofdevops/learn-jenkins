@@ -112,7 +112,7 @@ Download the specific version of .deb package using wget in tmp folder and proce
 **Note:** In our case we use jenkins_1.651.3
 
 ```
-$ sudo wget http://pkg.jenkins-ci.org/debian-stable/binary/jenkins_1.651.3_all.deb
+$ sudo wget http://pkg.jenkins-ci.org/debian-stable/binary/jenkins_2.19.4_all.deb
 $ sudo dpkg -i jenkins_1.651.3_all.deb
 ```
 
@@ -161,22 +161,34 @@ We assume you have installed docker and are ready to launch containers before pr
 
 If the above command goes through without errors, you are all set.  
 
-
 After installing docker, pull Jenkins docker image from [docker hub](https://hub.docker.com/_/jenkins/)
+
+Before running the Jenkins from Docker, create the following directory for mounting volume [Ref: Mount Volume](https://docs.docker.com/engine/tutorials/dockervolumes/)
+
+```
+mkdir /var/jenkins_home
+```
 
 This is the simplest way of installing Jenkins and requires minimal efforts.
 
 ```
-docker run -d --name jenkins   -p 8080:8080 -p 50000:50000 jenkins
+docker run -d --name jenkins -v /var/jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins:2.19.4-alpine
 
 ```
 
 If you install it using the instructions above, find out the IP address and go to http://YOUR_IP_ADDRESS:8080 to access jenkins UI.
 
-
-To stop/start jenkins with docker, use the following commands,
+After the installation, you will be asked for password. The password will be saved in the following file.
 
 ```
-docker stop jenkins
+/var/jenkins_home/secrets/initialAdminPassword
+```
+![Unlock Jenkins](images/chap2/Unlock_Jenkins.png)
+
+After that you have to select install 
+To start/stop jenkins with docker, use the following commands,
+
+```
 docker start jenkins
+docker stop jenkins
 ```

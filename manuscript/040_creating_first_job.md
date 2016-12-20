@@ -1,5 +1,5 @@
 # Chapter 4: Creating First Project
-In this session we are going to create and launch our first project  with jenkins. We will be using a free style projct for this example.
+In this session we are going to create and launch our first project  with jenkins. We will be using a free style project for this example.
 
 ## Types of Jobs
 With Jenkins you could create following kind of projects or jobs
@@ -11,7 +11,7 @@ With Jenkins you could create following kind of projects or jobs
 
 
 ## Jenkins Jobs Anatomy
-A  typical  style jenkins jobs has the following sections.
+A typical style jenkins jobs has the following sections.
 
 ![Anatomy of a Jenkins Job](images/chap4/jenkins_job_anatomy.png)
 
@@ -32,7 +32,7 @@ Lets now create a simple job using jenkins to run a hello world program.
 ![ Naming Jenkins Job ](images/chap4/job_name.jpg)
 
 Next screen opens the job configuration page. On the job configuration page,
-  1. Add job description .e.g "Our first Jenkins Job"  
+  1. Add job description. e.g., "Our first Jenkins Job"  
   1. Skip Source Code Management and Build Triggers, and scroll down to **Build** configurations.  
   1. From "Add Build Step" select **Execute Shell** and provide commands to execute. Since this  is a  mock job, you could provide following sample code,  
 
