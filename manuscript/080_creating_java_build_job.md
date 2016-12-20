@@ -40,7 +40,7 @@ In addition to compile, following are the goals Maven project could take.
 1. deploy
 
 
-* Save the job and clicl on **Build Now**.  Following is a snippet from the output of the build job.
+* Save the job and click on **Build Now**.  Following is a snippet from the output of the build job.
 
 
 
