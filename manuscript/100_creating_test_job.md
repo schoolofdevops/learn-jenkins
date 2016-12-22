@@ -20,3 +20,10 @@ Review Job Configurations
 ![Create Unit Test Job ](images/chap10/config.png)
 
 Review, Save and Build.
+
+----
+[Chapter 9: Integrating with Artifactory
+ **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/090_resolving_libs_from_artifactory.md) :point_left:
+
+ :point_right: [**Next** Chapter 11: Static Code Analysis with SonarQube
+](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md)

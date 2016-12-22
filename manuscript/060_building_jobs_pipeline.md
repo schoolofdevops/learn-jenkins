@@ -77,3 +77,8 @@ The pipeline view reads the first job, and picks up all the jobs which are direc
 Pipeline view also shows the history of job runs up to the number of instances you selected earlier in the configurations.
 
 Go trigger a **Run** from the pipeline view and see what happens. Make sure you have selected "ENABLE AUTO REFRESH" earlier from the top right corner of the screen.
+
+----
+[Chapter 5: Adding Build Triggers **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/050_add_build_triggers.md) :point_left:
+
+:point_right: [**Next** Chapter 7: Preparing to build Java  Projects](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/070_preparing_for_java_builds.md)

@@ -77,3 +77,44 @@ Save and Build.  If the job is successful, it should show a status similar to be
 
 
 ![SonarQube job status](images/chap11/status.png)
+
+
+### Adding Sonarqube_Build_Breaker Plugin
+
+* Login to the sonarqube container.
+
+      docker exec -it sonarqube /bin/bash
+
+* Execute the following command to install plugin and exit the container.
+
+      cd extensions/plugins/
+
+      wget -c https://github.com/SonarQubeCommunity/sonar-build-breaker/releases/download/2.1/sonar-build-breaker-plugin-2.1.jar
+
+      exit
+
+* Restart the container
+
+      docker restart sonarqube
+
+### Customizing Quality Gate
+
+* Login as admin in sonarqube console and create a new `Quality Gates` policy, name it as `strict`.
+
+* Here we are Choosing `code smells` and setting the value for `Warnings` and `Error`.
+
+  ![Quality Gate](images/chap11/1.png)
+
+* Once the Build falls under the criteria it will fail with the help of build-breaker plugin that we installed.
+
+  ![Quality Gate](images/chap11/2.png)
+
+* Thus the build is marked as failure and post build action will not be triggered.
+
+  ![Jenkins_sonar_fail](images/chap11/3.png)
+
+----
+[Chapter 10: Creating Test Job
+ **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md) :point_left:
+
+:point_right: [**Next** Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)

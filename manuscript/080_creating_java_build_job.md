@@ -59,3 +59,8 @@ channel stopped
 Finished: SUCCESS
 
 ```
+
+----
+[Chapter 7: Preparing to build Java  Projects **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/070_preparing_for_java_builds.md) :point_left:
+
+:point_right: [**Next** Chapter 9: Integrating with Artifactory](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/090_resolving_libs_from_artifactory.md)

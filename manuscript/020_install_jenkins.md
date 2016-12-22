@@ -186,6 +186,7 @@ docker start jenkins
 docker stop jenkins
 ```
 
+<<<<<<< HEAD
 ## Common Post Installation Steps
 
 After the installation, you will be asked for password. The password will be saved in the following file.
@@ -202,3 +203,9 @@ Create Admin user
 Now we have successfully installed Jenkins and we can proceed with configurations
 
 ![Final](images/chap2/Complete_Install.png)
+=======
+----
+[Chapter 1: Introduction **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md) :point_left:
+
+:point_right: [**Next** Chapter 3: Configure Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/030_configure_jenkins.md)
+>>>>>>> 98074a9ee84a9508eaf9bed9b19214004418557c
