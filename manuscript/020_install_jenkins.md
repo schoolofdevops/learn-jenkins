@@ -208,4 +208,3 @@ Now we have successfully installed Jenkins and we can proceed with configuration
 [Chapter 1: Introduction **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md) :point_left:
 
 :point_right: [**Next** Chapter 3: Configure Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/030_configure_jenkins.md)
->>>>>>> 98074a9ee84a9508eaf9bed9b19214004418557c
