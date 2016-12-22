@@ -180,3 +180,8 @@ To stop/start jenkins with docker, use the following commands,
 docker stop jenkins
 docker start jenkins
 ```
+
+----
+[Chapter 1: Introduction **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md) :point_left:
+
+:point_right: [**Next** Chapter 3: Configure Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/030_configure_jenkins.md)
