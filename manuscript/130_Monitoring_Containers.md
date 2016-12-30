@@ -11,7 +11,7 @@
 ```
 https://github.com/vijayboopathy/devops-demos.git
 ```  
-* Install Docker Compose by using the *Docker_compose_installation.sh* script  
+* Install Docker Compose by using the **Docker_compose_installation.sh** script  
 * After that, run *Elk_Script.sh* script  
 * This will set up the ELK stack for us  
 * You can access ELK's web interface (*kibana*) at http://YourIP:5601  
@@ -26,6 +26,33 @@ docker run -d -p 8888:8080 -v /home/ubuntu/tomcat-users.xml:/usr/local/tomcat/co
 * Then click on *Discover* to see the logs.  
 ![Discover](images/monitoring/discover.png)
 
+## Prometheus  
+* Some knowledge on Prometheus is needed to understand how this stack works.
+* From the same repo, run **Prometheus.sh** script  
+* This script will set up Prometheus stack  
+* Access the dashboard(*Grafana*) on http://YourIP:3000  
+* Access credentials are  
+```
+user: admin
+password: foobar
+```  
+* Click the Grafana Menu at the top left corner (looks like a fireball)  
+* Click Data Sources  
+* Click the green button Add Data Source.  
+![Datasource](images/monitoring/Add_Data_Source.png)  
+* In order to monitor application metrics from tomcat containers, we need to run **cadvisor** container on the nodes which also runs tomcat containers (The host which runs tomcat containers)  
+* To run cadvisor,  
+```
+sudo docker run   --volume=/:/rootfs:ro   --volume=/var/run:/var/run:rw   --volume=/sys:/sys:ro   --volume=/var/lib/docker/:/var/lib/docker:ro   --publish=9090:8080   --detach=true   --name=cadvisor google/cadvisor:latest
+```  
+* To add Tomcat container host as a target, edit prometheus/prometheus/prometheus.yml file
+
+### Install Dashboard
+* To see the metrics on Grafana, you need to install the custom dashboard.  
+* Simply download the dashboard and select from the Grafana menu -> Dashboards -> Import  
+* [Download Dashboard](https://grafana.net/dashboards/179)  
+* After configuring everything, the dashboard will look like the following image.  
+![Prometheus Dashboard With metrics](images/monitoring/pro_final.png)
 ## Papertrail
 
 * Go to https://papertrailapp.com/signup?plan=free
@@ -90,13 +117,13 @@ Now this contaner run in a background with port mapping 80:80.
 
   ![Mail](images/monitoring/9.png)
 
-* Once the settings are provoided and created an alert, settings are saved and we can Update, delete and modify the search.
+* Once the settings are provided and created an alert, settings are saved and we can Update, delete and modify the search.
 
   ![Mail](images/monitoring/10.png)
 
 ## Verifying an alert
 
-* We get an alert in mail once the query based on our search is occured.
+* We get an alert in mail once the query based on our search is occurred.
 
   ![Mail alert](images/monitoring/11.png)
 
