@@ -83,15 +83,21 @@ Save and Build.  If the job is successful, it should show a status similar to be
 
 * Login to the sonarqube container.
 
+```
       docker exec -it sonarqube /bin/bash
+```
 
 * Execute the following command to install plugin and exit the container.
+
+```
 
       cd extensions/plugins/
 
       wget -c https://github.com/SonarQubeCommunity/sonar-build-breaker/releases/download/2.1/sonar-build-breaker-plugin-2.1.jar
 
       exit
+
+```
 
 * Restart the container
 

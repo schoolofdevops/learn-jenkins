@@ -1,8 +1,30 @@
 # Monitoring Containers
   In this chapter we are going to monitor logs from container. This can be achieved by using the various monitoring tools, we use
 
-    * Papertrail - cloud-hosted log management
-    * Datadog - Cloud Monitoring as a Service
+    * ELK Stack - Log Monitoring
+    * Prometheus Stack - Application Monitoring
+    * Papertrail - Cloud-hosted log management
+    * Datadog - Cloud Monitoring as a Service  
+
+## ELK Stack  
+* Clone the following repository  
+```
+https://github.com/vijayboopathy/devops-demos.git
+```  
+* Install Docker Compose by using the *Docker_compose_installation.sh* script  
+* After that, run *Elk_Script.sh* script  
+* This will set up the ELK stack for us  
+* You can access ELK's web interface (*kibana*) at http://YourIP:5601  
+* Since we have not defined the Logstash source, we will get the following screen  
+![Kibana Welcome](images/monitoring/kibana.jpg)  
+* In order to define Logstash source, we need to run the tomcat containers with the following flag.
+```
+docker run -d -p 8888:8080 -v /home/ubuntu/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml --log-driver=syslog --log-opt syslog-address=tcp://LogstashIP:5000 tomcat
+```  
+* If you are exporting logs to Logstash successfully, you will get the following screen  
+![Logstash Configured](images/monitoring/Log_success.png)  
+* Then click on *Discover* to see the logs.  
+![Discover](images/monitoring/discover.png)
 
 ## Papertrail
 
