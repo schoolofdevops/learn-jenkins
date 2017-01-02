@@ -4,7 +4,7 @@
 
 Following video explains the usefulness of Artifactory to share libraries and artifacts in a collaborated development.
 
-[![Introduction ro Artifactory](images/chap9/artifactory_intro.png)](https://youtu.be/aa4YBDUDWy0 "Introduction to Artifactory")
+[![Introduction to Artifactory](images/chap9/artifactory_intro.png)](https://youtu.be/aa4YBDUDWy0 "Introduction to Artifactory")
 
 In addition, Artifactory could be used as a local repository for storing rpms, debs, docker images, gems, pythong packages etc.
 
@@ -33,9 +33,9 @@ Artifactory could be used for two purposes,
   1. Resolving Libraries/Packages `From`  
   1. Pushing build artifacts `To`  
 
-In this chapter, we are going to start using Artifactory as a local repository  to resolve libraries from.
+In this chapter, we are going to start using Artifactory as a local repository to resolve libraries from.
 
-In order to connect Artifactory with Jenkins, first step is t install the Plugin.
+In order to connect Artifactory with Jenkins, first step is to install the Plugin.
 
 ![Installing Artifactory Plugin](images/chap9/artifactory_plugin.jpg)
 
@@ -52,7 +52,7 @@ Following is a screenshot of the Artifactory console
 * Add Artifactory details and Test Connection
 
 e.g.  
-   uri: http://HOSTNAME:8081/artifactory  
+   url: http://HOSTNAME:8081/artifactory  
    port: 8081  
    user: admin  
    pass: password  
@@ -68,7 +68,7 @@ Once connection test to Artifactory server is successful, save the configuration
 Configure build job, and from build environment select **Resolve artifacts from Artifactory**. Click on **Refresh Repositories** which should auto select repositories. For snapshots, use libs-snapshot as repo name.
 
 
-![Resolve Artifacts from   Artifactory ](images/chap9/resolve.png)
+![Resolve Artifacts from Artifactory ](images/chap9/resolve.png)
 
 Validate that the artifacts are being resolved from Artifactory by running a new build and checking the console output.
 

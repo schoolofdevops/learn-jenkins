@@ -44,7 +44,7 @@ When you login to jenkins for the first time, following is the screen you would 
 
  Select "Installed" to view the list of the plugins which came pre installed with jenkins.
 
- ## Installing Git Plugin
+## Installing Git Plugin
   * From "Manage Plugins", select **Available** tab.
   * On the top-right corner you should see a filter box, start typing the search term in that box. For this example, we would type **git**.
 
@@ -52,6 +52,8 @@ When you login to jenkins for the first time, following is the screen you would 
   * Scroll down till you see "Git Plugin" in the list, select it and click on "Download and install after restart"
   ![Searching for Plugins](images/plugins/install_git_plugin.jpg)
 
+ If you don't see Git plugin in the available list then it might have got installed when we installed all the suggested plugins.
+=======
   ----
   [Chapter 2: Install Jenkins **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md) :point_left:
 

@@ -12,12 +12,12 @@ $ docker run -d -p 9000:9000 -p 9092:9092 sonarqube
 
 ### Install  Sonarqube Plugin in Jenkins
 
-From Manage Jenkins => Manage Plugins, install SOnarQube plugin from Available tab.
+From Manage Jenkins => Manage Plugins, install SonarQube plugin from Available tab.
 
 
 ### Generate Token (For SonarQube version 5.3 or higher)
 
-* From SonarQube UI, login using following (default) credentials
+* From SonarQube UI (http://YourIP:9000), login using following (default) credentials
 
 user: admin  
 pass: admin  
@@ -33,7 +33,7 @@ pass: admin
 
 ![Token ](images/chap11/sonarqube_tokens-02.jpg)
 
-Copy over the Token. This should be used for subsequently configuring sonarqube plugin for jenkins. Please note this token is shown only once.
+Copy over the Token. This should be used for subsequently configuring sonarqube plugin for jenkins. **Please note, this token is shown only once.**
 
 ### Configure Sonarqube Plugin
 From "Configure System" scroll to **SonarQube servers** and click on "Add SonarQube".
@@ -45,7 +45,7 @@ Select the following option
 Provide the details
 
 Name : Sonarqube
-Server URL: http://SONAR_IP:9000
+Server URL: http://YourIP:9000
 Either Token or User/Pass based on your version of SonarQube.
 
 Click on Apply.
@@ -83,15 +83,21 @@ Save and Build.  If the job is successful, it should show a status similar to be
 
 * Login to the sonarqube container.
 
+```
       docker exec -it sonarqube /bin/bash
+```
 
 * Execute the following command to install plugin and exit the container.
+
+```
 
       cd extensions/plugins/
 
       wget -c https://github.com/SonarQubeCommunity/sonar-build-breaker/releases/download/2.1/sonar-build-breaker-plugin-2.1.jar
 
       exit
+
+```
 
 * Restart the container
 

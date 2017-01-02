@@ -35,7 +35,7 @@ This file need to be mounted inside the container in `/usr/local/tomcat/conf/`
 Now use docker run command with port mapping and volume mount option to run Tomcat docker container.
 
 ```
-$ docker run -d -p 8888:8080 -v tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
+$ docker run -d -p 8888:8080 -v /home/ubuntu/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
 ```
 
 2. Install **Deploy to Container** Plugin in jenkins
