@@ -16,7 +16,7 @@ https://github.com/vijayboopathy/devops-demos.git
 * This will set up the ELK stack for us  
 * You can access ELK's web interface (*kibana*) at http://YourIP:5601  
 * Since we have not defined the Logstash source, we will get the following screen  
-![Kibana Welcome](images/monitoring/kibana.jpg)  
+![Kibana Welcome](images/monitoring/Kibana.jpg)  
 * In order to define Logstash source, we need to run the tomcat containers with the following flag.
 ```
 docker run -d -p 8888:8080 -v /home/ubuntu/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml --log-driver=syslog --log-opt syslog-address=tcp://LogstashIP:5000 tomcat
