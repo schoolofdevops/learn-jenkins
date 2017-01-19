@@ -20,7 +20,7 @@ $ docker run -d -p 8081:8081 docker.bintray.io/jfrog/artifactory-oss
 
 Artifactory should come up on the following URL
 
-http://192.168.9.10:8081/artifactory
+http://ARTIFACTORY_URL:8081/artifactory
 
 Default Credentials:
 

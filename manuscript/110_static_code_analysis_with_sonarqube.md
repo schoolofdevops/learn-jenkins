@@ -7,7 +7,7 @@ We assume that docker image for SonarQube is being pulled from [docker hub](http
 Now use docker run command with port mapping to run SonarQube docker container.
 
 ```
-$ docker run -d -p 9000:9000 -p 9092:9092 sonarqube
+$ docker run -d -p 9000:9000 -p 9092:9092 sonarqube:5.6.4
 ```
 
 ### Install  Sonarqube Plugin in Jenkins
