@@ -1,10 +1,10 @@
 # Create a custom Docker image with our application
 
-
 ## Create the Dockerfile
+
 * Change to Jenkins home directory.
 * Generally it would be **/var/lib/jenkins**.
-* Create the following Dockerfile from there.
+* Create the following [Dockerfile](https://docs.docker.com/engine/reference/builder/) from there.
 
 ```
 FROM tomcat:latest
@@ -15,6 +15,7 @@ ADD /workspace/Deploy/target/*.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
 ```
+## Build Docker Image
 
 * Now we will create a Docker Image with our application in it. Now keep in mind that the image name that you are giving using ** -t ** option will be the name of your repository on Docker Hub. (You will learn later in the chapter)
 
@@ -23,6 +24,7 @@ docker build -t cmadapp .
 ```
 
 [Output]
+
 ```
 Sending build context to Docker daemon   426 MB
 Step 1/7 : FROM tomcat:latest
@@ -60,6 +62,9 @@ cmadapp                                   latest              1388cee3acbe      
 docker.bintray.io/jfrog/artifactory-oss   latest              d7d26a1a4a8e        5 days ago           448 MB
 sonarqube                                 5.6.4               5b9898c62a2f        4 days ago           778 MB
 ```
+
+## Push Your Image
+
 * Go to [Docker Hub](https://hub.docker.com/).
 
 * Sign up if you don't have an account or log in.
