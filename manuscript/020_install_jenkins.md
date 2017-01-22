@@ -172,7 +172,7 @@ mkdir /var/jenkins_home
 This is the simplest way of installing Jenkins and requires minimal efforts.
 
 ```
-docker run -d --name jenkins -v /var/jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins:2.19.4-alpine
+docker run -idt --name jenkins  -v /var/run.docker.sock:/var/run/docker.sock  -p 8080:8080 -p 50000:50000  jenkins:2.19.4-alpine
 
 ```
 
@@ -186,7 +186,6 @@ docker start jenkins
 docker stop jenkins
 ```
 
-<<<<<<< HEAD
 ## Common Post Installation Steps
 
 After the installation, you will be asked for password. The password will be saved in the following file.
@@ -194,7 +193,24 @@ After the installation, you will be asked for password. The password will be sav
 ```
 /var/jenkins_home/secrets/initialAdminPassword
 ```
+
+Password can be also fetched from the logs. You could run the following command to view the password,
+
+```
+docker logs jenkins
+
+or to follow the logs
+
+docker logs -f jenkins
+
+[use ^c to come back to the terminal]
+
+```
+
 ![Unlock Jenkins](images/chap2/Unlock_Jenkins.png)
+
+
+Select ** Install Suggested Plugins ** when given an option. This will install all common plugins such as git, gradle, svn, ssh, pipeline which are quiet handy.
 
 Create Admin user
 
