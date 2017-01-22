@@ -11,10 +11,13 @@ FROM tomcat:latest
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 WORKDIR $CATALINA_HOME
-ADD /workspace/Deploy/target/*.war /usr/local/tomcat/webapps/
+ADD Your_Application.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
 ```
+
+* Change **Your_Application** with your actual application path( Path to .war file ).
+
 ## Build Docker Image
 
 * Now we will create a Docker Image with our application in it. Now keep in mind that the image name that you are giving using ** -t ** option will be the name of your repository on Docker Hub. (You will learn later in the chapter)
