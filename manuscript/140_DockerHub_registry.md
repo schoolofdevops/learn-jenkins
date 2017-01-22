@@ -99,3 +99,11 @@ docker push YourDockerHubId/ImageName:latest
 * After pushing the image, you can see it is listed on your Docker Hub dashboard.
 
 ![repo](images/dockerhub/repo.jpg)
+
+* Now you can pull this image from any machine just like pulling other docker images. Only thing that you have to have in your mind is specifying correct repository name in the pull command.
+
+```
+docker pull YourRepoName/YourImageName:
+```
+
+![pull](images/dockerhub/pull.jpg)
