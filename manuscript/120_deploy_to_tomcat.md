@@ -5,7 +5,7 @@ We have setup the jobs which compile code and then run unit tests, static code a
 
 ## Preparing Tomcat for Deployment
 
-### Running SonarQube as a Docker Container
+### Running Tomcat as a Docker Container
 
 We assume that docker image for Tomcat is being pulled from [docker hub](https://hub.docker.com/_/tomcat/)
 
@@ -39,19 +39,20 @@ $ docker run -d -p 8888:8080 -v /home/ubuntu/tomcat-users.xml:/usr/local/tomcat/
 ```
 
 2. Install **Deploy to Container** Plugin in jenkins
-3. From post build action, select deploy to EAR/WAR Container
+3. Create a project called **deploy** with following configurations
+4. From post build action, select deploy to EAR/WAR Container
      context: cmad
      tomcat url : http://ipadress:8888
      user: admin
      pass: s3cret
 ![deploy to Container](images/chap12/deploy to Container.png)
 
-4. From post build action, select Deploy artifacts to Artifactory
+5. From post build action, select Deploy artifacts to Artifactory
 
   Refresh to get the target repositories
 ![Deploy artifacts to Artifactory](images/chap12/Deploy artifacts to Artifactory.png)
 
-5. Verify browser for Deployment
+6. Verify browser for Deployment
 
   ![Deployment](images/chap12/Deployment.png)
 
