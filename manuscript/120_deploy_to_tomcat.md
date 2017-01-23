@@ -35,24 +35,25 @@ This file need to be mounted inside the container in `/usr/local/tomcat/conf/`
 Now use docker run command with port mapping and volume mount option to run Tomcat docker container.
 
 ```
-$ docker run -d -p 8888:8080 -v /home/ubuntu/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
+docker run -d -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
 ```
 
-2. Install **Deploy to Container** Plugin in jenkins
-3. Create a project called **deploy** with following configurations
-4. From post build action, select deploy to EAR/WAR Container
+2. Replace **/path/to/** with the corresponding path of tomcat-users.xml file that you have created.
+3. Install **Deploy to Container** Plugin in jenkins
+4. Create a project called **deploy** with following configurations
+5. From post build action, select deploy to EAR/WAR Container
      context: cmad
      tomcat url : http://ipadress:8888
      user: admin
      pass: s3cret
 ![deploy to Container](images/chap12/deploy to Container.png)
 
-5. From post build action, select Deploy artifacts to Artifactory
+6. From post build action, select Deploy artifacts to Artifactory
 
   Refresh to get the target repositories
 ![Deploy artifacts to Artifactory](images/chap12/Deploy artifacts to Artifactory.png)
 
-6. Verify browser for Deployment
+7. Verify browser for Deployment
 
   ![Deployment](images/chap12/Deployment.png)
 
