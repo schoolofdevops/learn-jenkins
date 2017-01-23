@@ -7,15 +7,15 @@ Running java builds with maven would require additional preparations. Maven shou
 
 ## Configure JDK and Maven
 
-## Configuring Existing OpenJDk
+## Option 1: Configuring Existing OpenJDk
 * From **Manage Jenkins** select  **Global Tool Configuration**
-* Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "OpenJDK 7".
+* Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "OpenJDK 8".
 * Uncheck **Install Automatically** and provide JAVA_HOME
-e.g.  /usr/lib/jvm/java-1.7.0-openjdk-amd6
+e.g.  /usr/lib/jvm/java-1.8-openjdk
 ![Adding JDK](images/chap7/openjdk.png)
 
 
-## Installing  Oracle Java  
+## Option 2: Installing  Oracle Java  
 * If you don't have a existing JDK setup, you can install it from Jenkins itself.
 * From **Manage Jenkins** select  **Configure System**
 * Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "JDK 8".
