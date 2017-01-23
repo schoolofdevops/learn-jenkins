@@ -120,7 +120,7 @@ Save and Build.  If the job is successful, it should show a status similar to be
   ![Jenkins_sonar_fail](images/chap11/3.png)
 
 ----
-[Chapter 10: Creating Test Job
- **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md) :point_left:
+
+:point_left:[**Prev** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md) 
 
 :point_right: [**Next** Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)

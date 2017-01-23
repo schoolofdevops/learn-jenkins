@@ -14,42 +14,39 @@ This is the simplest way of setting up the learning environment for this course 
 
 Open a bash terminal using ConEMU or Git Bash, change into the directory where you have copied over the box file and import it using,
 
-``` vagrant box add devops  devops-ci-v01.box ```
+```
+vagrant box add devops  devops-ci-v01.box
+```
 
 Validate that the box is available on your system by running,
 
-{title="Listing ", lang=html, linenos=off}
-~~~~~~~
-
+```
 vagrant box list
+```
 
 [output]
 
+```
 devops                   (virtualbox, 0)
-
-~~~~~~~
+```
 
 If you see **devops** in the list of available boxes, the template is been successfully imported.
 
 Now lets bring up the Vagrant environment. To do so, you need to open a bash shell either using ConEmu or Git Bash and cd into lab-setup/ci/virtual directory. In this directory, you should see a Vagrantfile.
 
-A> ##
-A> All vagrant commands to manage a VM are run from a directory
-A> where this Vagrantfile is
+All vagrant commands to manage a VM are run from a directory where this Vagrantfile is
 
-
-{title="Listing ", lang=html, linenos=off}
-~~~~~~~
+```
 cd lab-setup/ci/virtual
 vagrant up
 vagrant ssh
-~~~~~~~
+```
 
 After you run **vagrant ssh**, you should have been logged into the environment.
 
 Validate that Jenkins comes up at the following URL
 
-http://192.168.9.10:8080
+http://YOUR_IP_ADDRESS:8080
 
 
 ## Setting up learning environment on Ubuntu 14.04
@@ -62,46 +59,47 @@ Jenkins requires Java Development Kit to be installed first.
 
 * Installing OpenJDK 7
 
-  ```
-  $ sudo apt-get install add-apt-repository
-  $ sudo add-apt-repository ppa:openjdk-r/ppa
-  $ sudo apt-get update
-  $ sudo apt-get install openjdk-8-jdk
-  ```
+```
+$ sudo apt-get install add-apt-repository
+$ sudo add-apt-repository ppa:openjdk-r/ppa
+$ sudo apt-get update
+$ sudo apt-get install openjdk-8-jdk
+```
 
-  Run the following command to set the default Java and Javac:
+Run the following command to set the default Java and Javac:
 
-  ```
-  $ sudo update-alternatives --config java
-  $ sudo update-alternatives --config javac
-  ```
+```
+$ sudo update-alternatives --config java
+$ sudo update-alternatives --config javac
+```
 
-  If there is more than one Java versions installed on your system, type in a number to select a Java version.
+If there is more than one Java versions installed on your system, type in a number to select a Java version.
 
-  If you face any dependency error use this command to resolve the dependencies.
+If you face any dependency error use this command to resolve the dependencies.
 
-  ```
-  $ sudo apt-get -f install
-  ```  
+```
+$ sudo apt-get -f install
+```  
+
 * Verifying Installation
 
-  ```
-  $ sudo java -version
-  ```
+```
+$ sudo java -version
+```
 
 #### Installing Maven 3
 
 * Installing Maven
 
-  ```
-  $ sudo apt-get install maven
-  ```
+```
+$ sudo apt-get install maven
+```
 
 * Verifying Installation
 
-  ```
-  $ sudo mvn -version
-  ```
+```
+$ sudo mvn -version
+```
 
 #### Installing Jenkins
 
@@ -136,18 +134,16 @@ Installing OpenJDK 7
 
 ```
 yum install -y  <jdk>
-
 ```
 
 Installing Stable version of Jenkins
 
-{title="Listing ", lang=shell, linenos=off}
-~~~~~~~
+```
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
 sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 sudo yum install jenkins
 sudo service jenkins start
-~~~~~~~
+```
 
 ## Installing Jenkins With Docker
 
@@ -157,7 +153,9 @@ Proceed with installing Docker Engine on your choice of Operating System. For de
 
 We assume you have installed docker and are ready to launch containers before proceeding. To validate docker environment run  
 
-``` docker ps ```
+```
+docker ps
+```
 
 If the above command goes through without errors, you are all set.  
 
@@ -173,7 +171,6 @@ This is the simplest way of installing Jenkins and requires minimal efforts.
 
 ```
 docker run -idt --name jenkins  -v /var/run.docker.sock:/var/run/docker.sock  -p 8080:8080 -p 50000:50000  jenkins:2.19.4-alpine
-
 ```
 
 If you install it using the instructions above, find out the IP address and go to http://YOUR_IP_ADDRESS:8080 to access jenkins UI.
@@ -198,9 +195,11 @@ Password can be also fetched from the logs. You could run the following command 
 
 ```
 docker logs jenkins
+```
 
 or to follow the logs
 
+```
 docker logs -f jenkins
 
 [use ^c to come back to the terminal]
@@ -219,8 +218,8 @@ Create Admin user
 Now we have successfully installed Jenkins and we can proceed with configurations
 
 ![Final](images/chap2/Complete_Install.png)
-=======
-----
-[Chapter 1: Introduction **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md) :point_left:
+
+-----
+:point_left:[**Prev** Chapter 1: Introduction](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md)
 
 :point_right: [**Next** Chapter 3: Configure Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/030_configure_jenkins.md)
