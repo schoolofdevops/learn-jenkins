@@ -53,8 +53,7 @@ When you login to jenkins for the first time, following is the screen you would 
   ![Searching for Plugins](images/plugins/install_git_plugin.jpg)
 
  If you don't see Git plugin in the available list then it might have got installed when we installed all the suggested plugins.
-=======
-  ----
-  [Chapter 2: Install Jenkins **Prev**](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md) :point_left:
+----
+:point_left:[**Prev** Chapter 2: Install Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md)
 
-  :point_right: [**Next** Chapter 4: Creating First Project with Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/040_creating_first_job.md)
+:point_right: [**Next** Chapter 4: Creating First Project with Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/040_creating_first_job.md)
