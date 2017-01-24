@@ -25,7 +25,7 @@ This tomcat-users.xml file contains,
 
   <role rolename="admin-gui"/>
   <role rolename="manager-gui"/>
-  <user username="admin" password="s3cret" roles="admin-gui,manager-gui,manager-script"/>
+  <user username="admin" password="password" roles="admin-gui,manager-gui,manager-script"/>
 
 </tomcat-users>
 ```
@@ -40,20 +40,21 @@ docker run -d -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf/t
 
 2. Replace **/path/to/** with the corresponding path of tomcat-users.xml file that you have created.
 3. Install **Deploy to Container** Plugin in jenkins
-4. Create a project called **deploy** with following configurations
-5. From post build action, select deploy to EAR/WAR Container
+4. Create a project called **deploy** which is a copy of **test** job
+5. But the maven goal should be **"package"**.
+![maven](images/chap12/mvn.png)
+6. From post build action, select deploy to EAR/WAR Container
      context: cmad
      tomcat url : http://ipadress:8888
      user: admin
      pass: s3cret
 ![deploy to Container](images/chap12/deploy to Container.png)
+7. From post build action, select Deploy artifacts to Artifactory.
 
-6. From post build action, select Deploy artifacts to Artifactory
-
-  Refresh to get the target repositories
+ Refresh to get the target repositories
 ![Deploy artifacts to Artifactory](images/chap12/Deploy artifacts to Artifactory.png)
 
-7. Verify browser for Deployment
+8. Verify browser for Deployment
 
   ![Deployment](images/chap12/Deployment.png)
 
