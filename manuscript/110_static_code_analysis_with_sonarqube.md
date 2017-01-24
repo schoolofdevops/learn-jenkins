@@ -7,7 +7,7 @@ We assume that docker image for SonarQube is being pulled from [docker hub](http
 Now use docker run command with port mapping to run SonarQube docker container.
 
 ```
-$ docker run -d -p 9000:9000 -p 9092:9092 sonarqube:5.6.4
+docker run -idt  --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube:5.6.4
 ```
 
 ### Install  Sonarqube Plugin in Jenkins
@@ -121,6 +121,6 @@ Save and Build.  If the job is successful, it should show a status similar to be
 
 ----
 
-:point_left:[**Prev** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md) 
+:point_left:[**Prev** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md)
 
 :point_right: [**Next** Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)
