@@ -35,10 +35,10 @@ This file need to be mounted inside the container in `/usr/local/tomcat/conf/`
 Now use docker run command with port mapping and volume mount option to run Tomcat docker container.
 
 ```
-docker run -d -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
+docker run -idt -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
 ```
 
-2. Replace **/path/to/** with the corresponding path of tomcat-users.xml file that you have created.
+2. Replace **/path/to/** with the corresponding absolute path of tomcat-users.xml file that you have created.
 3. Install **Deploy to Container** Plugin in jenkins
 4. Create a project called **deploy** which is a copy of **test** job
 5. But the maven goal should be **"package"**.
