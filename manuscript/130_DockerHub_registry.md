@@ -10,7 +10,8 @@
 ![Build](images/dockerhub/Build.jpg)
 * Paste the following script in the text box.
 
-```#!/bin/bash
+```
+#!/bin/bash
 
 #Change these values
 jobname=Deploy
