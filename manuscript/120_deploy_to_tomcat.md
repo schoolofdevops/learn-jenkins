@@ -61,4 +61,4 @@ docker run -idt -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf
 ----
 :point_left:[**Prev** Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md)
 
-:point_right: [**Next** Chapter 13: Monitoring Containers Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_Monitoring_Containers.md)
+:point_right: [**Next** Chapter 13: Pushing our Application to Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_DockerHub_registry.md)

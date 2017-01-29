@@ -62,7 +62,7 @@ kc6sdrdmmgz8yeq1j67drze87 *  docker-swarm-1  Ready   Active        Leader
 * Run the following command on manager(machine 1) node.
 
 ```
-docker service create --replicas 2 --publish 8080:8080 --name tomcat dialectpython/cmadapp
+docker service create --replicas 2 --publish 8080:8080 --name tomcat dialectpython/customtom
 ```
 
 [Output]
@@ -84,7 +84,7 @@ docker service ls
 
 ```
 ID            NAME    MODE        REPLICAS  IMAGE
-7rlbg3raq28w  tomcat  replicated  2/2       dialectpython/cmadapp:latest
+7rlbg3raq28w  tomcat  replicated  2/2       dialectpython/customtom:latest
 ```
 
 * If you run **docker ps** on either of two machines, you can see the container is running
@@ -103,4 +103,8 @@ http://Your_Machine'sIP:8080/CMADSession
 
 ![app2](images/Swarm/app2.png)
 
-* As you can see, our application is being served by two conainers
+* As you can see, our application is being served by two conainers in Docker Swarm
+
+----
+:point_left:[**Prev** Chapter 13: Pushing our Application to Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_dockerHub_registry.md)
+:point_right:[**Next** Chapter 15: Monitoring Containers](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/150_monitoring_containers.md)

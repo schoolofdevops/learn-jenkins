@@ -184,6 +184,5 @@ Now this contaner run in a background with port mapping 80:80.
     ![Dashboard](images/monitoring/19.png)
 
 ----
-:point_left:[**Prev** Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)
 
-:point_right: [**Next** Chapter 14: Docker Hub Registry](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_Monitoring_Containers.md)
+:point_right: [**Next** Chapter 14: Docker Hub Registry](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/140_deploy_application_to_docker_swarm_cluster.md)
