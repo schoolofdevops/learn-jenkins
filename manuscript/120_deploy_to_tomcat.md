@@ -35,10 +35,10 @@ This file need to be mounted inside the container in `/usr/local/tomcat/conf/`
 Now use docker run command with port mapping and volume mount option to run Tomcat docker container.
 
 ```
-docker run -d -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
+docker run -idt -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
 ```
 
-2. Replace **/path/to/** with the corresponding path of tomcat-users.xml file that you have created.
+2. Replace **/path/to/** with the corresponding absolute path of tomcat-users.xml file that you have created.
 3. Install **Deploy to Container** Plugin in jenkins
 4. Create a project called **deploy** which is a copy of **test** job
 5. But the maven goal should be **"package"**.
@@ -61,4 +61,4 @@ docker run -d -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf/t
 ----
 :point_left:[**Prev** Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md)
 
-:point_right: [**Next** Chapter 13: Monitoring Containers Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_Monitoring_Containers.md)
+:point_right: [**Next** Chapter 13: Pushing our Application to Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_DockerHub_registry.md)

@@ -87,21 +87,19 @@ Save and Build.  If the job is successful, it should show a status similar to be
       docker exec -it sonarqube /bin/bash
 ```
 
-* Execute the following command to install plugin and exit the container.
+* Execute the following commands to install plugin and exit the container.
 
 ```
-
-      cd extensions/plugins/
-
-      wget -c https://github.com/SonarQubeCommunity/sonar-build-breaker/releases/download/2.1/sonar-build-breaker-plugin-2.1.jar
-
-      exit
-
+cd extensions/plugins/
+wget -c https://github.com/SonarQubeCommunity/sonar-build-breaker/releases/download/2.1/sonar-build-breaker-plugin-2.1.jar
+exit
 ```
 
 * Restart the container
 
-      docker restart sonarqube
+```
+docker restart sonarqube
+```
 
 ### Customizing Quality Gate
 
