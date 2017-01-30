@@ -13,7 +13,7 @@
 * [Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md)
 * [Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)
 * [Chapter 13: Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_DockerHub_registry.md)
-* [Chapter 14: Deploy application to Docker Swarm ](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/140_deploy_application_to_docker_swarm_cluster.md)
+* [Chapter 14: Deploy application to Docker Swarm ](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/140_Deploy_application_to_Docker_Swarm_cluster.md)
 * [Chapter 15: Monitoring Containers](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/150_monitoring_containers.md)
 
 ### License (CC-BY-NC-ND)
