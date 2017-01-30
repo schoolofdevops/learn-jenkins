@@ -187,4 +187,5 @@ docker pull YourRepoName/YourImageName:
 -----
 
 :point_left:[**Prev** Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)
-:point_right:[**Prev** Chapter 14: Deploy application to a Docker Swarm cluster](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/140_deploy_application_to_docker_swarm_cluster.md)
+
+:point_right:[**Next** Chapter 14: Deploy application to a Docker Swarm cluster](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/140_deploy_application_to_docker_swarm_cluster.md)

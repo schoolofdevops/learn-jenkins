@@ -106,5 +106,6 @@ http://Your_Machine'sIP:8080/CMADSession
 * As you can see, our application is being served by two conainers in Docker Swarm
 
 ----
-:point_left:[**Prev** Chapter 13: Pushing our Application to Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_dockerHub_registry.md)
+:point_left:[**Prev** Chapter 13: Pushing our Application to Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_DockerHub_registry.md)
+
 :point_right:[**Next** Chapter 15: Monitoring Containers](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/150_monitoring_containers.md)

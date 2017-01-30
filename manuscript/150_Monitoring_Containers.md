@@ -197,4 +197,4 @@ docker run -d --name dd-agent -h `hostname` -v /var/run/docker.sock:/var/run/doc
 
 ----
 
-:point_right: [**Next** Chapter 14: Docker Hub Registry](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/140_deploy_application_to_docker_swarm_cluster.md)
+:point_right: [**Next** Chapter 14: Docker Hub Registry](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_DockerHub_registry.md)
