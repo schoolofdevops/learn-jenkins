@@ -53,4 +53,3 @@ When you login to jenkins for the first time, following is the screen you would 
   * Scroll down till you see "Git Plugin" in the list, select it and click on "Download and install after restart"
   ![Searching for Plugins](images/plugins/install_git_plugin.jpg)
   * If you don't see Git plugin in the available list then it might have got installed when we installed all the suggested plugins.
-----
