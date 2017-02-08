@@ -48,7 +48,8 @@ When you login to jenkins for the first time, following is the screen you would 
   * From "Manage Plugins", select **Available** tab.
   * On the top-right corner you should see a filter box, start typing the search term in that box. For this example, we would type **git**.
 
-  ![Searching for Plugins](images/plugins/searching_for_plugins.jpg)  
+  ![Searching for Plugins](images/plugins/searching_for_plugins.jpg)
+
   * Scroll down till you see "Git Plugin" in the list, select it and click on "Download and install after restart"
   ![Searching for Plugins](images/plugins/install_git_plugin.jpg)
 
