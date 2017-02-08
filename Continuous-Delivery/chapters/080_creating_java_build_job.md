@@ -1,14 +1,16 @@
-# Chapter 8: Creating  Build Job for a Java Project
+# Creating  Build Job for a Java Project
 
 In this chapter, we are going to create a job to build/compile a sample java application with maven.
 
 ## Creating Maven Project
 
 To create a build project,
-* From New Item, select **Maven Project** and provide it a name e.g. "build"
-* If you do not see Maven Project from the list, you need to install **maven integration plugin**
-* And also if you are using Jenkins as a service on the host (installed using a deb file or using package manager), you need to install git and docker as well
 
+* From New Item, select **Maven Project** and provide it a name e.g. "build".
+
+* If you do not see Maven Project from the list, you need to install **maven integration plugin**.
+
+* And also if you are using Jenkins as a service on the host (installed using a deb file or using package manager), you need to install git and docker as well.
 
 ```
 sudo apt-get install git
@@ -27,10 +29,9 @@ From **Build Triggers** select **Poll SCM**. Lets configure it to poll every 5 m
 
 ```
 H/5 * * * *
-
 ```
-![Poll SCM](images/chap8/poll_scm.png)
 
+![Poll SCM](images/chap8/poll_scm.png)
 
 * Scroll down to Build step and you should see Root POM selected since its a Maven Project. In the Goals and options section, provide **compile** as a goal.
 
@@ -39,18 +40,15 @@ H/5 * * * *
 In addition to compile, following are the goals Maven project could take.
 
 1. validate
-1. compile - compile source code
-1. test - unit tests
-1. package - build jar/war
-1. integration-test
-1. verify
-1. install
-1. deploy
-
+2. compile - compile source code
+3. test - unit tests
+4. package - build jar/war
+5. integration-test
+6. verify
+7. install
+8. deploy
 
 * Save the job and click on **Build Now**.  Following is a snippet from the output of the build job.
-
-
 
 ```
 [INFO] Compiling 1 source file to /var/jenkins_home/workspace/build/target/classes
@@ -65,10 +63,4 @@ Waiting for Jenkins to finish collecting data
 [JENKINS] Archiving /var/jenkins_home/workspace/build/pom.xml to com.example.app/maven-app/3.0-release/maven-app-3.0-release.pom
 channel stopped
 Finished: SUCCESS
-
 ```
-
-----
-:point_left:[**Prev** Chapter 7: Preparing to build Java  Projects](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/070_preparing_for_java_builds.md)
-
-:point_right: [**Next** Chapter 9: Integrating with Artifactory](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/090_resolving_libs_from_artifactory.md)

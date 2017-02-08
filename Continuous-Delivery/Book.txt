@@ -10,3 +10,4 @@ mainmatter:
 050_add_build_triggers.md
 060_building_jobs_pipeline.md
 070_preparing_for_java_builds.md
+080_creating_java_build_job.md
