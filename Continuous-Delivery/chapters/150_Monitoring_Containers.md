@@ -6,7 +6,7 @@ In this chapter we are going to monitor logs from container. This can be achieve
 
 * Prometheus Stack - Application Monitoring
 
-* Papertrail - Cloud-hosted log management
+* Papertrail - Cloud-based log management
 
 * Datadog - Cloud Monitoring as a Service  
 
