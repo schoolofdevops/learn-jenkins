@@ -11,3 +11,4 @@ mainmatter:
 060_building_jobs_pipeline.md
 070_preparing_for_java_builds.md
 080_creating_java_build_job.md
+090_resolving_libs_from_artifactory.md
