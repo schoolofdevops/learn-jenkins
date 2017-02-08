@@ -199,7 +199,7 @@ docker logs -f jenkins
 [use ^c to come back to the terminal]
 ```
 
-![Unlock Jenkins](/home/ubuntu/learn-jenkins/Continuous-Delivery/images/chap2/Unlock_Jenkins.png)
+![Unlock Jenkins](images/chap2/Unlock_Jenkins.png)
 
 
 Select ** Install Suggested Plugins ** when given an option. This will install all common plugins such as git, gradle, svn, ssh, pipeline which are quiet handy.
