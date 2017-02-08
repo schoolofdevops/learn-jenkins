@@ -47,7 +47,7 @@ From Manage Plugins, lets filter by "Artifactory", select the relevant plugin an
 
 * Manage Jenkins -> Configure System -> Artifactory -> Add
 
-* Add Artifactory details and Test Connection
+* Add Artifactory details and Test Connection.
 
 e.g.
 
