@@ -40,6 +40,7 @@ pass: admin
 Copy over the Token. This should be used for subsequently configuring sonarqube plugin for jenkins. **Please note, this token is shown only once**.
 
 ## Configure Sonarqube Plugin
+
 From "Configure System" scroll to **SonarQube servers** and click on "Add SonarQube".
 
 Select the following option,
@@ -48,7 +49,7 @@ Select the following option,
 Enable injection of SonarQube server configuration as build environment variables.
 ```
 
-Provide the details
+Provide the details.
 
 ```
 Name : Sonarqube
