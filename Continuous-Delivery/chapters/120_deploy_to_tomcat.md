@@ -37,16 +37,18 @@ Now use docker run command with port mapping and volume mount option to run Tomc
 docker run -idt -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml tomcat
 ```
 
-1. Replace **/path/to/** with the corresponding absolute path of tomcat-users.xml file that you have created.
+* Replace **/path/to/** with the corresponding absolute path of tomcat-users.xml file that you have created.
 
-2. Install **Deploy to Container** Plugin in jenkins.
+## Tomcat Configuration in Jenkins
 
-3. Create a project called **deploy** which is a copy of **test** job.
+1. Install **Deploy to Container** Plugin in jenkins.
 
-4. But the maven goal should be **"package"**.
+2. Create a project called **deploy** which is a copy of **test** job.
+
+3. But the maven goal should be **"package"**.
 
     ![maven](images/chap12/mvn.png)  
-5. From post build action, select deploy to EAR/WAR Container.
+4. From post build action, select deploy to EAR/WAR Container.
 
 ```
 context: cmad
@@ -56,9 +58,9 @@ pass: s3cret
 ```
 
   ![deploy to Container](images/chap12/deploy to Container.png)  
-6. From post build action, select Deploy artifacts to Artifactory.
+5. From post build action, select Deploy artifacts to Artifactory.
 
-7. Refresh to get the target repositories.
+6. Refresh to get the target repositories.
 
   ![Deploy artifacts to Artifactory](images/chap12/Deploy artifacts to Artifactory.png)  
 7. Verify browser for Deployment.
