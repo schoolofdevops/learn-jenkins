@@ -75,11 +75,11 @@ docker.bintray.io/jfrog/artifactory-oss   latest              d7d26a1a4a8e      
 
 * Now we will push this image to Docker Hub.
 
-* Log in to your **Docker Hub** from the machine
+* Log in to your **Docker Hub** from the machine.
 
   ![login_console](images/dockerhub/login_console.jpg)
 
-* Now in the machine in which you have the custom image, tag the **Image ID** with your **Docker Hub** name
+* Now in the machine in which you have the custom image, tag the **Image ID** with your **Docker Hub** name.
 
 ```
 docker tag ImageID YourDockerHubId/ImageName:latest
@@ -87,7 +87,7 @@ docker tag ImageID YourDockerHubId/ImageName:latest
 
   ![tag](images/dockerhub/tag.jpg)
 
-* Now to push the image to Docker Hub, run the following command
+* Now to push the image to Docker Hub, run the following command.
 
 ```
 docker push YourDockerHubId/ImageName:latest
@@ -102,7 +102,7 @@ docker push YourDockerHubId/ImageName:latest
 * Now you can pull this image from any machine just like pulling other docker images. Only thing that you have to have in your mind is specifying correct repository name in the pull command.
 
 ```
-docker pull YourRepoName/YourImageName:
+docker pull YourRepoName/YourImageName:latest
 ```
 
   ![pull](images/dockerhub/pull.jpg)
