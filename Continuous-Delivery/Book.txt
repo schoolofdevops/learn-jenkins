@@ -5,3 +5,4 @@ tableofcontents
 preface.md
 mainmatter:
 020_install_jenkins.md
+030_configure_jenkins.md
