@@ -13,3 +13,4 @@ mainmatter:
 080_creating_java_build_job.md
 090_resolving_libs_from_artifactory.md
 100_creating_test_job.md
+110_static_code_analysis_with_sonarqube.md
