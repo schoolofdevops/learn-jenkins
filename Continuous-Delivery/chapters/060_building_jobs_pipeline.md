@@ -73,10 +73,10 @@ Lets now create a pipeline view.
 
 ## Run pipelines
 
-The pipeline view reads the first job, and picks up all the jobs which are directly or indirectly connected showing you one single view of the complete workflow and the order in which it is going to be executed.
+* The pipeline view reads the first job, and picks up all the jobs which are directly or indirectly connected showing you one single view of the complete workflow and the order in which it is going to be executed.
 
 ![Run Pipeline](images/chap6/run_pipe.jpg)
 
-Pipeline view also shows the history of job runs up to the number of instances you selected earlier in the configurations.
+* Pipeline view also shows the history of job runs up to the number of instances you selected earlier in the configurations.
 
-Go trigger a **Run** from the pipeline view and see what happens. Make sure you have selected "ENABLE AUTO REFRESH" earlier from the top right corner of the screen.
+* Go trigger a **Run** from the pipeline view and see what happens. Make sure you have selected "ENABLE AUTO REFRESH" earlier from the top right corner of the screen.
