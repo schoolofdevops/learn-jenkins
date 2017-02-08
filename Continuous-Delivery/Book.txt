@@ -9,3 +9,4 @@ mainmatter:
 040_creating_first_job.md
 050_add_build_triggers.md
 060_building_jobs_pipeline.md
+070_preparing_for_java_builds.md
