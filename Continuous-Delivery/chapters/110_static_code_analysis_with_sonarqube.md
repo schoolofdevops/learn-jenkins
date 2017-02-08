@@ -10,15 +10,21 @@ docker run -idt  --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube:5.6.4
 
 ## Install  Sonarqube Plugin in Jenkins
 
-From Manage Jenkins => Manage Plugins, install SonarQube plugin from Available tab.
+From
+
+```
+Manage Jenkins => Manage Plugins
+```
+
+install SonarQube plugin from Available tab.
 
 ## Generate Token (For SonarQube version 5.3 or higher)
 
 * From SonarQube UI (http://YourIP:9000), login using following (default) credentials.
 
 ```
-user: `admin`
-pass: `admin`
+user: admin
+pass: admin
 ```
 
 * Click on **Administration** Tab. From **Security** drop down menu, select **Users**.
