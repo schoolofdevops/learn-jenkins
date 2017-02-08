@@ -7,3 +7,4 @@ mainmatter:
 020_install_jenkins.md
 030_configure_jenkins.md
 040_creating_first_job.md
+050_add_build_triggers.md
