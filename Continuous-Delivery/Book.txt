@@ -15,3 +15,4 @@ mainmatter:
 100_creating_test_job.md
 110_static_code_analysis_with_sonarqube.md
 120_deploy_to_tomcat.md
+130_DockerHub_registry.md
