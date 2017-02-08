@@ -67,7 +67,7 @@ Lets now create a pipeline view.
 
 ![Pipe Line View](images/chap6/pipe1.jpg)
 
-From the view configurations, select initial job from the drop down menu and the number of displayed builds.  Click on OK to finish configurations and show the view.
+* From the view configurations, select initial job from the drop down menu and the number of displayed builds.  Click on OK to finish configurations and show the view.
 
 ![Add View](images/chap6/pipe1_config.jpg)
 
