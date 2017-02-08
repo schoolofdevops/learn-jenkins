@@ -56,13 +56,11 @@ pass: s3cret
 ```
 
   ![deploy to Container](images/chap12/deploy to Container.png)  
-
 6. From post build action, select Deploy artifacts to Artifactory.
 
 7. Refresh to get the target repositories.
 
   ![Deploy artifacts to Artifactory](images/chap12/Deploy artifacts to Artifactory.png)  
-
 7. Verify browser for Deployment.
 
   ![Deployment](images/chap12/Deployment.png)
