@@ -8,3 +8,4 @@ mainmatter:
 030_configure_jenkins.md
 040_creating_first_job.md
 050_add_build_triggers.md
+060_building_jobs_pipeline.md
