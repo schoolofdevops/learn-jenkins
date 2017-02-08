@@ -28,12 +28,13 @@ A typical style jenkins jobs has the following sections.
 Lets now create a simple job using jenkins to run a hello world program.
 
   1. From Jenkins Main page, click on **New Item**.
-  ![New Job](images/chap4/new_item.jpg)
+    ![New Job](images/chap4/new_item.jpg)
 
   2. Provide a name to the project in Item Name i.e. "job1". Check against Free Style Project.
-  ![ Naming Jenkins Job ](images/chap4/job_name.jpg)
+    ![ Naming Jenkins Job ](images/chap4/job_name.jpg)
 
-Next screen opens the job configuration page. On the job configuration page,
+    Next screen opens the job configuration page. On the job configuration page,
+
   3. Add job description. e.g., "Our first Jenkins Job".
 
   4. Skip Source Code Management and Build Triggers, and scroll down to **Build** configurations.
