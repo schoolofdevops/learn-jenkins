@@ -35,7 +35,9 @@ Lets now create a simple job using jenkins to run a hello world program.
 
 Next screen opens the job configuration page. On the job configuration page,
   3. Add job description. e.g., "Our first Jenkins Job".
+
   4. Skip Source Code Management and Build Triggers, and scroll down to **Build** configurations.
+
   5. From "Add Build Step" select **Execute Shell** and provide commands to execute. Since this  is a  mock job, you could provide following sample code,
 
 ```
