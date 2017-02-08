@@ -44,7 +44,7 @@ docker run -idt -p 8888:8080 -v /path/to/tomcat-users.xml:/usr/local/tomcat/conf
 3. Create a project called **deploy** which is a copy of **test** job.
 
 4. But the maven goal should be **"package"**.
-![maven](images/chap12/mvn.png)
+![maven](images/chap12/mvn.png)  
 
 5. From post build action, select deploy to EAR/WAR Container
 
@@ -55,13 +55,13 @@ user: admin
 pass: s3cret
 ```
 
-![deploy to Container](images/chap12/deploy to Container.png)
+![deploy to Container](images/chap12/deploy to Container.png)  
 
 6. From post build action, select Deploy artifacts to Artifactory.
 
 7. Refresh to get the target repositories.
 
-  ![Deploy artifacts to Artifactory](images/chap12/Deploy artifacts to Artifactory.png)
+  ![Deploy artifacts to Artifactory](images/chap12/Deploy artifacts to Artifactory.png)  
 
 7. Verify browser for Deployment.
 
