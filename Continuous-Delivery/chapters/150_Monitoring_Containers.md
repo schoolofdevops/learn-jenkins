@@ -1,16 +1,18 @@
 # Monitoring Containers
 
-In this chapter we are going to monitor logs from container. This can be achieved by using the various monitoring tools, we use
+In this chapter we are going to monitor logs from container. This can be achieved by using the various monitoring tools, we use...
 
 * ELK Stack - Log Monitoring
 
-* Prometheus Stack - Application Monitoring
+* Prometheus Stack - Performance Monitoring
 
 * Papertrail - Cloud-based log management
 
 * Datadog - Cloud Monitoring as a Service  
 
-## ELK Stack
+## Log Monitoring
+
+### ELK Stack
 
 * Clone the following repository
 
@@ -41,9 +43,11 @@ docker run -d -p 8888:8080 -v /home/ubuntu/tomcat-users.xml:/usr/local/tomcat/co
 * Then click on *Discover* to see the logs.  
   ![Discover](images/monitoring/discover.png)
 
-## Prometheus
+## Performance Monitoring
 
-### Set up the Prometheus Stack
+### Prometheus
+
+#### Set up the Prometheus Stack
 
 * Some knowledge on Prometheus is needed to understand how this stack works.
 
@@ -77,7 +81,7 @@ sudo docker run   --volume=/:/rootfs:ro   --volume=/var/run:/var/run:rw   --volu
 
 * To add Tomcat container host as a target, edit prometheus/prometheus/prometheus.yml file.
 
-### Install Dashboard
+#### Install Dashboard
 
 * To see the metrics on Grafana, you need to install the custom dashboard.
 
@@ -88,9 +92,11 @@ sudo docker run   --volume=/:/rootfs:ro   --volume=/var/run:/var/run:rw   --volu
 * After configuring everything, the dashboard will look like the following image.
   ![Prometheus Dashboard With metrics](images/monitoring/pro_final.png)
 
-## Papertrail
+## Cloud Based Monitoring Solutions
 
-### Main Configurations
+### Papertrail
+
+#### Main Configurations
 
 * Go to https://papertrailapp.com/signup?plan=free
 
@@ -108,7 +114,7 @@ sudo docker run   --volume=/:/rootfs:ro   --volume=/var/run:/var/run:rw   --volu
 
 *Note: Url will be different for you*
 
-### Setting up Logspout Container
+#### Setting up Logspout Container
 
 * To send logs from applications running in a Docker container, we use a small container developed by [gliderlabs](https://hub.docker.com/r/gliderlabs/logspout/)
 
@@ -124,7 +130,7 @@ docker run --restart=always -d -p 80:80\
 
 * Now this contaner run in a background with port mapping 80:80.
 
-### Monitoring logs
+#### Monitoring logs
 
 * Once there is an entry for log in other container starts, Logspout Container helps to collect the logs from various Containers to papertrail automatically.
 
@@ -142,7 +148,7 @@ docker run --restart=always -d -p 80:80\
 
   ![Events](images/monitoring/6.png)
 
-### Creating an Alert
+#### Creating an Alert
 
 * To create an alert based on log, `search` for the entry and `Save Search`.
 
@@ -160,7 +166,7 @@ docker run --restart=always -d -p 80:80\
 
   ![Mail](images/monitoring/10.png)
 
-### Verifying an alert
+#### Verifying an alert
 
 * We get an alert in mail once the query based on our search is occurred.
 
@@ -168,13 +174,13 @@ docker run --restart=always -d -p 80:80\
 
   ![Mail alert](images/monitoring/12.png)
 
-## Datadog
+### Datadog
 
 * Signup for a 14 day trial account in [datadog](https://app.datadoghq.com/signup)
 
   ![Signup](images/monitoring/13.png)
 
-### Installation
+#### Installation
 
 * Once signup login to the console choose `Integrations` --> `Agent` in it then proceed with installing for Ubuntu to monitor host.
 
@@ -204,7 +210,7 @@ sudo /etc/init.d/datadog-agent stop
 docker run -d --name dd-agent -h `hostname` -v /var/run/docker.sock:/var/run/docker.sock -v /proc/:/host/proc/:ro -v /sys/fs/cgroup/:/host/sys/fs/cgroup:ro -e API_KEY=1ba0c0a88c3dcf52b076886045f47a8c datadog/docker-dd-agent:latest
 ```
 
-### Monitoring
+#### Monitoring
 
 * Once it is done after few minutes the datadog agent will start monitoring host and other containers.
 
