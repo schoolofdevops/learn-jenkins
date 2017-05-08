@@ -57,3 +57,8 @@ Click on **Build Now** to launch a build. Once the build is started, you would s
 Once build is finished, click on the build number which starts with # . Clicking on the build number e.g. **#1** will take you to the page which shows the build stats. Option of interest on this page might be **Console Status** which shows the run time output.
 
 ![Console Output](images/chap4/console_output.jpg)
+
+----
+:point_left:[**Prev** Chapter 3: Jenkins Systems Configurations](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/030_configure_jenkins.md)
+
+:point_right: [**Next** Chapter 5: Adding Build Triggers ](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/050_add_build_triggers.md)

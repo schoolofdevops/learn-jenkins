@@ -202,7 +202,7 @@ docker logs -f jenkins
 ![Unlock Jenkins](images/chap2/Unlock_Jenkins.png)
 
 
-Select ** Install Suggested Plugins ** when given an option. This will install all common plugins such as git, gradle, svn, ssh, pipeline which are quiet handy.
+Select **Install Suggested Plugins** when given an option. This will install all common plugins such as git, gradle, svn, ssh, pipeline which are quiet handy.
 
 Create Admin user
 
@@ -213,3 +213,6 @@ Now we have successfully installed Jenkins and we can proceed with configuration
 ![Final](images/chap2/Complete_Install.png)
 
 -----
+:point_left:[**Prev** Chapter 1: Introduction](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/010_introduction.md)
+
+:point_right: [**Next** Chapter 3: Configure Jenkins](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/030_configure_jenkins.md)

@@ -52,3 +52,8 @@ To have Maven installed automatically,
 Thats it. Maven and JDK will automatically be installed when you create a project with java build.
 
 **Note:** JDK and Maven are not immediately Installed after providing these configurations. Jenkins would call the procedures to install these when you create a Job which uses JDK/Maven.
+
+----
+:point_left:[**Prev** Chapter 6: Building a Pipeline](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/060_building_jobs_pipeline.md)
+
+:point_right: [**Next** Chapter 8: Creating Java Build Project](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/080_creating_java_build_job.md)

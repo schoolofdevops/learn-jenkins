@@ -80,3 +80,8 @@ Lets now create a pipeline view.
 * Pipeline view also shows the history of job runs up to the number of instances you selected earlier in the configurations.
 
 * Go trigger a **Run** from the pipeline view and see what happens. Make sure you have selected "ENABLE AUTO REFRESH" earlier from the top right corner of the screen.
+
+----
+:point_left:[**Prev** Chapter 5: Adding Build Triggers ](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/050_add_build_triggers.md)
+
+:point_right: [**Next** Chapter 7: Preparing to build Java  Projects](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/070_preparing_for_java_builds.md)

@@ -28,6 +28,20 @@ username : admin
 password : password  
 ```
 
+After loggin in you will be welcomed with this page.
+
+![welcome](images/chap9/welcome.jpg)
+
+* Click on next, You will be asked to set up admin username and password. **Skip** this for now and use the default credentials.
+
+* After that, you will be asked to **Configure a Proxy Server**. **Skip** this step as well.
+
+* In **Create Repositories** page, click on **maven** and click on **Create**.
+
+![create](images/chap9/create.jpg)
+
+* Then click on **finish**.
+
 ## Integrating Artifactory with Jenkins
 
 Artifactory could be used for two purposes,
@@ -77,3 +91,8 @@ Validate that the artifacts are being resolved from Artifactory by running a new
 [INFO] Downloading: http://52.39.130.66:8081/artifactory/libs-release/org/apache/maven/maven-parent/22/maven-parent-22.pom
 [INFO] Downloaded: http://52.39.130.66:8081/artifactory/libs-release/org/apache/maven/maven-parent/22/maven-parent-22.pom (0 B at 0.0 KB/sec)
 ```
+
+----
+:point_left:[**Prev** Chapter 8: Creating Java Build Project](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/080_creating_java_build_job.md)
+
+:point_right: [**Next** Chapter 10: Creating Test Job](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/100_creating_test_job.md)

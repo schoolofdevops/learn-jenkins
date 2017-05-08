@@ -4,11 +4,13 @@ In this chapter, we are going to create a job to build/compile a sample java app
 
 ## Creating Maven Project
 
+Before we start to create our build job, we need to install **maven-integration** plugin.
+
+![Maven Plugin](images/chap8/plugin.jpg)
+
 To create a build project,
 
 * From New Item, select **Maven Project** and provide it a name e.g. "build".
-
-* If you do not see Maven Project from the list, you need to install **maven integration plugin**.
 
 * And also if you are using Jenkins as a service on the host (installed using a deb file or using package manager), you need to install git and docker as well.
 
@@ -64,3 +66,8 @@ Waiting for Jenkins to finish collecting data
 channel stopped
 Finished: SUCCESS
 ```
+
+----
+:point_left:[**Prev** Chapter 7: Preparing to build Java  Projects](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/070_preparing_for_java_builds.md)
+
+:point_right: [**Next** Chapter 9: Integrating with Artifactory](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/090_resolving_libs_from_artifactory.md)

@@ -52,5 +52,11 @@ When you login to jenkins for the first time, following is the screen you would 
 
   * Scroll down till you see "Git Plugin" in the list, select it and click on "Download and install after restart"
   ![Searching for Plugins](images/plugins/install_git_plugin.jpg)
-  
+
   * If you don't see Git plugin in the available list then it might have got installed when we installed all the suggested plugins.
+
+
+  ----
+  :point_left:[**Prev** Chapter 2: Install Jenkins](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/020_install_jenkins.md)
+
+  :point_right: [**Next** Chapter 4: Creating First Project with Jenkins](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/040_creating_first_job.md)

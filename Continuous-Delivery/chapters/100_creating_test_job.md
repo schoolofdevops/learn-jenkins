@@ -23,3 +23,8 @@ Review Job Configurations
 ![Create Unit Test Job ](images/chap10/config.png)
 
 Review, Save and Build.
+
+----
+:point_left:[**Prev** Chapter 9: Integrating with Artifactory](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/090_resolving_libs_from_artifactory.md)
+
+:point_right: [**Next** Chapter 11: Static Code Analysis with SonarQube](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/110_static_code_analysis_with_sonarqube.md)
