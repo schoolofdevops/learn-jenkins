@@ -5,6 +5,8 @@ Now, we will deploy our application using **docker-compose**.
 
 ## Pre-requisite
 
+### Docker Compose Installation
+
 Before we create our Deploy job, we need to *install Docker-Compose*. To do that, log in to **jenkins container** and perform the following commands.
 
 ```
@@ -17,6 +19,25 @@ chmod +x ~/docker-compose
 ~/docker-compose
 ```
 
+### Docker-Compose file Edit
+
+Then fork the following Git repository.
+
+```
+https://github.com/initcron/CI-Vertx.git
+```
+
+This repo consists of one docker-compose file.
+
+![compose](images/docker-compose/compose.jpg)
+
+**Edit** this file. **Replace YOUR_DOCKER_ID/IMAGE_NAME:TAG** with your own values.
+
+For me it looks like this. (**Note: This is my image name. Do not use this**)
+
+![image](images/docker-compose/image.jpg)
+
+
 ## Create a Deploy Job
 
 ![job](images/docker-compose/job.jpg)
@@ -25,7 +46,15 @@ chmod +x ~/docker-compose
 
 ![trigger](images/docker-compose/trigger.jpg)
 
-* Build Trigger should be **Docker-Image** job.
+* In *Source Code Management* step, add the following git repository.
+
+```
+https://github.com/initcron/CI-Vertx.git
+```
+
+This repository has a docker-compose file.
+
+* In *Build Trigger*, add **Docker-Image** as a trigger.
 
 ![build](images/docker-compose/build.jpg)
 

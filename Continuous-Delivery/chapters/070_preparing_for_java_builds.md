@@ -10,7 +10,7 @@ After building a pipeline with mock jobs, we are going to start creating a workf
 
 * Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "OpenJDK 8".
 
-* Uncheck **Install Automatically** and provide JAVA_HOME e.g.  /usr/lib/jvm/java-1.8-openjdk
+* Uncheck **Install Automatically** and provide JAVA_HOME e.g.  /usr/lib/jvm/java-8-openjdk-amd64
 
 ![Adding JDK](images/chap7/openjdk.png)
 

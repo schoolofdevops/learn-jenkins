@@ -4,7 +4,7 @@ In the previous chapter, we have learnt about SonarQube. In this chapter, we wil
 
 Just like other maven jobs, Create a new job called *Package*, which is a **copy of test job**, and click on OK.
 
-Then, Change the Build trigger to *BBuild after other projects are built*. This project should be built **after SonarQube Static Code Analysis Job**.
+Then, Change the Build trigger to *Build after other projects are built*. This project should be built **after SonarQube Static Code Analysis Job**.
 
 In the *Build step*, set **compile** as the maven goal.
 

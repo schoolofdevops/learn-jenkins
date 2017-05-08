@@ -99,9 +99,13 @@ sudo docker push <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest
 
 Replace **<YOUR_DOCKER_ID>** and **<YOUR_IMAGE_NAME>** with your own values.
 
-* Then click on **Save**.
+* Your build steps should look like this.
 
 ![last](images/docker-image/last.jpg)
+
+* Then click on **Save**.
+
+
 
 ## One last thing
 
