@@ -9,14 +9,16 @@ Now our application is ready to be used as a result of successful Package job ru
 
 ## Docker-Image Job
 
-* Before creating this job, please install **copy artifacts plugin** which is a prerequisite.
+* Before creating this job, please install **copy artifacts plugin** which is also a prerequisite.
+
+![plugin](images/docker-image/plugin.jpg)
 
 * This time create a *freestyle project* named **Docker-Image**.
 
 * In *Source Code Management* step, add the following git repository.
 
 ```
-https://github.com/vijayboopathy/CI-Vertx.git
+https://github.com/initcron/CI-Vertx.git
 ```
 
 This repository has a Dockerfile and a script file (Just to set a Java opts property) in it.
@@ -25,9 +27,23 @@ This repository has a Dockerfile and a script file (Just to set a Java opts prop
 
 ![repo](images/docker-image/repo.jpg)
 
-* Click on save project for now.
+* Click on apply project for now.
+
+## Build Environment
+
+![clear](images/docker-image/clear.jpg)
+
+This job requires workspace to be cleared before it runs. So,
+
+* In *Build Environment step*, Select **Delete workspace before build starts** then click on **Advanced**.
+
+* In *Patterns for files to be deleted* section, click on **Add**.
+
+* In the second field add **target/*.war** as a pattern.
 
 ## Copy the artifact from Package
+
+![last](images/docker-image/last1.jpg)
 
 * In *Build Step*, **Copy artifacts from another project** from the drop down list.
 
@@ -69,14 +85,16 @@ Like the previous step, we add a script inside the image. The purpose of this sc
 
 ## Let's Build the Image
 
+![last](images/docker-image/last2.jpg)
+
 * This job has **one more** *Build step*.
 
 * Select **Execute shell** from the drop down menu and put the following content.
 
 ```
-docker build -t <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest .
+sudo docker build -t <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest .
 
-docker push <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest
+sudo docker push <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest
 ```
 
 Replace **<YOUR_DOCKER_ID>** and **<YOUR_IMAGE_NAME>** with your own values.
