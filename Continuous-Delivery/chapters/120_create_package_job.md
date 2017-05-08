@@ -17,6 +17,6 @@ Select **Archive the artifacts** from the drop down menu.
 In **Files to archive** section, set *target/*.war* as a value.
 
 ----
-:point_left:[**Prev** Chapter 11: Static Code Analysis with SonarQube](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/110_static_code_analysis_with_sonarqube.md)
+:point_left:[**Prev** Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/110_static_code_analysis_with_sonarqube.md)
 
-:point_right: [**Next** Chapter 13: Docker Hub Registry Job](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/130_DockerHub_registry.md)
+:point_right: [**Next** Chapter 13: Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/130_DockerHub_registry.md)

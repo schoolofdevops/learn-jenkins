@@ -57,6 +57,6 @@ When you login to jenkins for the first time, following is the screen you would 
 
 
   ----
-  :point_left:[**Prev** Chapter 2: Install Jenkins](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/020_install_jenkins.md)
+  :point_left:[**Prev** Chapter 2: Install Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/020_install_jenkins.md)
 
-  :point_right: [**Next** Chapter 4: Creating First Project with Jenkins](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/040_creating_first_job.md)
+  :point_right: [**Next** Chapter 4: Creating First Project with Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/040_creating_first_job.md)

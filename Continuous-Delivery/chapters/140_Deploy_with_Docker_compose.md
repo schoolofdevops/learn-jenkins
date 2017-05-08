@@ -67,4 +67,4 @@ This repository has a docker-compose file.
 * Finally click on save.
 
 ----
-:point_left:[**Prev** Chapter 14: Docker Hub Registry Job](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/130_create_docker_image.md)
+:point_left:[**Prev** Chapter 14: Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/130_create_docker_image.md)

@@ -93,6 +93,6 @@ Validate that the artifacts are being resolved from Artifactory by running a new
 ```
 
 ----
-:point_left:[**Prev** Chapter 8: Creating Java Build Project](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/080_creating_java_build_job.md)
+:point_left:[**Prev** Chapter 8: Creating Java Build Project](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/080_creating_java_build_job.md)
 
-:point_right: [**Next** Chapter 10: Creating Test Job](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/100_creating_test_job.md)
+:point_right: [**Next** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/100_creating_test_job.md)

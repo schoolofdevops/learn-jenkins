@@ -213,6 +213,6 @@ Now we have successfully installed Jenkins and we can proceed with configuration
 ![Final](images/chap2/Complete_Install.png)
 
 -----
-:point_left:[**Prev** Chapter 1: Introduction](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/010_introduction.md)
+:point_left:[**Prev** Chapter 1: Introduction](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/010_introduction.md)
 
-:point_right: [**Next** Chapter 3: Configure Jenkins](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/030_configure_jenkins.md)
+:point_right: [**Next** Chapter 3: Configure Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/030_configure_jenkins.md)

@@ -132,6 +132,6 @@ password: <YOUR_PASSWORD>
 If everything goes well, this job will create a Docker image and push it to DockerHub registry.
 
 ----
-:point_left:[**Prev** Chapter 12: Creating Package  Job](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/120_create_package_job.md)
+:point_left:[**Prev** Chapter 12: Creating Package  Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/120_create_package_job.md)
 
-:point_right: [**Next** Chapter 14: Deploy application Using Docker Compose ](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/140_Deploy_with_Docker_compose.md)
+:point_right: [**Next** Chapter 14: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/140_Deploy_with_Docker_compose.md)

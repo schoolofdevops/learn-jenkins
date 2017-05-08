@@ -68,6 +68,6 @@ Finished: SUCCESS
 ```
 
 ----
-:point_left:[**Prev** Chapter 7: Preparing to build Java  Projects](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/070_preparing_for_java_builds.md)
+:point_left:[**Prev** Chapter 7: Preparing to build Java  Projects](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/070_preparing_for_java_builds.md)
 
-:point_right: [**Next** Chapter 9: Integrating with Artifactory](https://github.com/vijayboopathy/CI-Vertx-Doc/blob/master/Continuous-Delivery/chapters/090_resolving_libs_from_artifactory.md)
+:point_right: [**Next** Chapter 9: Integrating with Artifactory](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/090_resolving_libs_from_artifactory.md)
