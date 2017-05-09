@@ -1,20 +1,19 @@
 # Jenkins Primer for a Devops Engineer
 
 
-* [Chapter 2: Setting up Learning Environment](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/020_install_jenkins.md)  
-* [Chapter 3: Jenkins Systems Configurations](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/030_configure_jenkins.md)
-* [ Chapter 4: Creating First Project with Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/040_creating_first_job.md)
-* [Chapter 5: Adding Build Triggers ](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/050_add_build_triggers.md)
-* [Chapter 6: Building a Pipeline](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/060_building_jobs_pipeline.md)
-* [Chapter 7: Preparing to build Java  Projects](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/070_preparing_for_java_builds.md)
-* [Chapter 8: Creating Java Build Project](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/080_creating_java_build_job.md)
-* [Chapter 9: Integrating with Artifactory](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/090_resolving_libs_from_artifactory.md)
-* [Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/100_creating_test_job.md)
-* [Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/110_static_code_analysis_with_sonarqube.md)
-* [Chapter 12: Deploying to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/120_deploy_to_tomcat.md)
-* [Chapter 13: Monitoring Containers Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/manuscript/130_Monitoring_Containers.md)
-* [Chapter 14: Docker Hub Registry](https://github.com/vijayboopathy/learn-jenkins/blob/master/manuscript/140_DockerHub_registry.md)
-
+* [Chapter 2: Setting up Learning Environment](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/020_install_jenkins.md)  
+* [Chapter 3: Jenkins Systems Configurations](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/030_configure_jenkins.md)
+* [ Chapter 4: Creating First Project with Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/040_creating_first_job.md)
+* [Chapter 5: Adding Build Triggers ](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/050_add_build_triggers.md)
+* [Chapter 6: Building a Pipeline](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/060_building_jobs_pipeline.md)
+* [Chapter 7: Preparing to build Java  Projects](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/070_preparing_for_java_builds.md)
+* [Chapter 8: Creating Java Build Project](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/080_creating_java_build_job.md)
+* [Chapter 9: Integrating with Artifactory](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/090_resolving_libs_from_artifactory.md)
+* [Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/100_creating_test_job.md)
+* [Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/110_static_code_analysis_with_sonarqube.md)
+* [Chapter 12: Creating Package  Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/120_create_package_job.md)
+* [Chapter 13: Create Docker Image](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/130_create_docker_image.md)
+* [Chapter 14: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/140_Deploy_with_Docker_compose.md)
 
 ### License (CC-BY-NC-ND)
 
