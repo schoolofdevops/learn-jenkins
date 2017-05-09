@@ -14,6 +14,7 @@
 * [Chapter 12: Creating Package  Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/120_create_package_job.md)
 * [Chapter 13: Create Docker Image](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/130_create_docker_image.md)
 * [Chapter 14: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/140_Deploy_with_Docker_compose.md)
+* [Chapter 15: Deploy application to Tomcat ](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/150_deploy_to_tomcat.md)
 
 ### License (CC-BY-NC-ND)
 
