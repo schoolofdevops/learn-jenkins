@@ -82,6 +82,13 @@ ADD setenv.sh /usr/local/tomcat/bin/setenv.sh
 
 Like the previous step, we add a script inside the image. The purpose of this script is to decrease the launch time of the application.
 
+You will also have to create **setenv.sh** with the following content
+
+```
+# Fast up the server boot process
+export JAVA_OPTS="$JAVA_OPTS -Djava.security.egd=file:/dev/./urandom"
+```
+
 
 ## Let's Build the Image
 
