@@ -130,10 +130,6 @@ This job requires workspace to be cleared before it runs. So,
 
 * This will copy our application from Package job to Docker-Image job.
 
-
-<<<<<<< HEAD
-### Let's Build the Image
-=======
 ## Build the Docker Image
 
 ### Dockerfile
@@ -169,7 +165,6 @@ export JAVA_OPTS="$JAVA_OPTS -Djava.security.egd=file:/dev/./urandom"
 
 
 ## Let's Build the Image
->>>>>>> upstream/master
 
 ![last](images/docker-image/last2.jpg)
 
