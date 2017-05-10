@@ -98,8 +98,6 @@ password: <YOUR_PASSWORD>
 https://github.com/initcron/CI-Vertx.git
 ```
 
-This repository has a Dockerfile and a script file (Just to set a Java opts property) in it.
-
 * In *Build Trigger*, add **Package** as a trigger.
 
 ![repo](images/docker-image/repo.jpg)
