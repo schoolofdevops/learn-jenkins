@@ -6,7 +6,7 @@ Just like other maven jobs, Create a new job called *Package*, which is a **copy
 
 Then, Change the Build trigger to *Build after other projects are built*. This project should be built **after SonarQube Static Code Analysis Job**.
 
-In the *Build step*, set **compile -Dmaven.test.skip=true** as the maven goal.
+In the *Build step*, set **package -Dmaven.test.skip=true** as the maven goal.
 
 The most important step in this chapter is the **Post-build Action**.
 
