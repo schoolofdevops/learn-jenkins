@@ -1,4 +1,4 @@
-# Deploy with Docker-Compose
+# Deploy to Staging with Docker-Compose
 
 In the previous chapter we have created our Docker image and pushed it to the Dockerhub registry.
 Now, we will deploy our application using **docker-compose**.

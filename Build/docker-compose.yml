@@ -1,0 +1,33 @@
+version: '3'
+services:
+  jenkins:
+    image: schoolofdevops/jenkins_ansible:v0.1.4
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    container_name: jenkins
+
+  artifactory:
+    image: docker.bintray.io/jfrog/artifactory-oss
+    ports:
+      - "8081:8081"
+    container_name: artifactory
+
+  sonarqube:
+    image: sonarqube
+    ports:
+      - "9000:9000"
+      - "9092:9092"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    container_name: sonarqube
+
+  tomcat:
+    image: tomcat
+    ports:
+      - "8888:8080"
+    volumes:
+        - ./volumes/tomcat/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+    container_name: tomcat

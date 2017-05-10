@@ -133,7 +133,45 @@ This job requires workspace to be cleared before it runs. So,
 * This will copy our application from Package job to Docker-Image job.
 
 
+<<<<<<< HEAD
 ### Let's Build the Image
+=======
+## Build the Docker Image
+
+### Dockerfile
+
+* Before we build our Docker image, let us see what this Dockerfile does.
+
+* It is very simple and has only three steps.
+
+```
+FROM tomcat:latest
+```
+
+We are building our image with *official tomcat* image as a **Base image**.
+
+```
+ADD *.war /usr/local/tomcat/webapps/cmad.war
+```
+
+Here we copy our application from the host to container.
+
+```
+ADD setenv.sh /usr/local/tomcat/bin/setenv.sh
+```
+
+Like the previous step, we add a script inside the image. The purpose of this script is to decrease the launch time of the application.
+
+You will also have to create **setenv.sh** with the following content
+
+```
+# Fast up the server boot process
+export JAVA_OPTS="$JAVA_OPTS -Djava.security.egd=file:/dev/./urandom"
+```
+
+
+## Let's Build the Image
+>>>>>>> upstream/master
 
 ![last](images/docker-image/last2.jpg)
 
