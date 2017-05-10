@@ -2,6 +2,22 @@
 
 In this chapter, we are going to create a job to build/compile a sample java application with maven.
 
+## Pre-requisites
+
+### Requisite 1 - Fork the sourc code
+
+* Before we begin to create our build job, we need to get our source code ready. **Fork** the following repository which contains our source code.
+
+```
+http://github.com/initcron/CI-Vertx
+```
+
+* Then select the **vertx-v1** branch which has the relevant code.
+
+![branch](images/chap8/branch.jpg)
+
+* You will be making some changes in this repo in the upcoming chapters.
+
 ## Creating Maven Project
 
 Before we start to create our build job, we need to install **maven-integration** plugin.
@@ -21,11 +37,13 @@ sudo apt-get install docker-engine
 
 ![Maven Project](images/chap8/maven_proj.png)
 
-* From the configuration screen, scroll to Source Code Management, select GIT and provide repository URL
+* From the configuration screen, scroll to Source Code Management, select GIT and provide repository URL of **Your Repository**
 
-e.g. https://github.com/schoolofdevops/demo
+```
+e.g. https://github.com/schoolofdevops/CI-Vertx
+```
 
-![GIT SCM](images/chap8/scm_git.png)
+![GIT SCM](images/chap8/scm_git.jpg)
 
 From **Build Triggers** select **Poll SCM**. Lets configure it to poll every 5 minutes using the following schedule
 

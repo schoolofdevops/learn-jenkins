@@ -25,6 +25,6 @@ Review Job Configurations
 Review, Save and Build.
 
 ----
-:point_left:[**Prev** Chapter 9: Integrating with Artifactory](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/090_resolving_libs_from_artifactory.md)
+:point_left:[**Prev** Chapter 9: Integrating with Artifactory](https://github.com/schoolofdevops/learn-jenkins/blob/vertx-v1/continuous-delivery/chapters/090_resolving_libs_from_artifactory.md)
 
-:point_right: [**Next** Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/110_static_code_analysis_with_sonarqube.md)
+:point_right: [**Next** Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/vertx-v1/continuous-delivery/chapters/110_static_code_analysis_with_sonarqube.md)
