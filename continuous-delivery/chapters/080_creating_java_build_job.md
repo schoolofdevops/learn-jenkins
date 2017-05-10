@@ -12,8 +12,6 @@ In this chapter, we are going to create a job to build/compile a sample java app
 http://github.com/initcron/CI-Vertx
 ```
 
-* Then select the **vertx-v1** branch which has the relevant code.
-
 ![branch](images/chap8/branch.jpg)
 
 * You will be making some changes in this repo in the upcoming chapters.

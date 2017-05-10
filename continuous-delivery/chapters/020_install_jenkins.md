@@ -20,18 +20,19 @@ After installing docker, pull our Jenkins docker image from [docker hub](https:/
 
 This is the simplest way of installing Jenkins and requires minimal efforts.
 
-```
-docker run -idt --name jenkins  -v /var/run/docker.sock:/var/run/docker.sock  -p 8080:8080 -p 50000:50000 schoolofdevops/jenkins:2.19.4-debian
-```
-
-If you install it using the instructions above, find out the IP address and go to http://YOUR_IP_ADDRESS:8080 to access jenkins UI.
-
-After that you have to select install
-To start/stop jenkins with docker, use the following commands,
+We do this by using a docker-compose file. Don't bother about learning about docker-compose now. You will be explained later. just run the following commands in the same sequence.
 
 ```
-docker start jenkins
-docker stop jenkins
+git clone http://github.com/schoolofdevops/learn-jenkins
+git checkout vertx-v1
+cd build
+docker-compose up -d
+```
+
+This command (docker-compose up -d) will bring up the whole infrastructure. **If** you want to bring up **jenkins alone** run the following command.
+
+```
+docker-compose up -d jenkins
 ```
 
 ## Common Post Installation Steps
