@@ -67,6 +67,6 @@ pass: s3cret
   ![Deployment](images/chap12/Deployment.png)
 
 ----
-:point_left:[**Prev** Chapter 12: Creating Package  Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/120_create_package_job.md)
+:point_left:[**Prev** Chapter 12: Creating Package  Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/120_create_package_job.md)
 
-:point_right: [**Next** Chapter 14: Create Docker Image Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/140_create_docker_image.md)
+:point_right: [**Next** Chapter 14: Create Docker Image Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/140_create_docker_image.md)
