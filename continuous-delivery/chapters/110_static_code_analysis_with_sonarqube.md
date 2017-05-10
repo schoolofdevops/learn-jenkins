@@ -2,11 +2,7 @@
 
 ## Running SonarQube as a Docker Container
 
-We assume that docker image for SonarQube is being pulled from [docker hub](https://hub.docker.com/_/sonarqube/). Now use docker run command with port mapping to run SonarQube docker container.
-
-```
-docker run -idt  --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube:5.6.4
-```
+We assume that docker image for SonarQube is being pulled from [docker hub](https://hub.docker.com/_/sonarqube/). 
 
 ## Install  Sonarqube Plugin in Jenkins
 

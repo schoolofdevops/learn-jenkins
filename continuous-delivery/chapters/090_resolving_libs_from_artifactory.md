@@ -12,12 +12,6 @@ In addition, Artifactory could be used as a local repository for storing rpms, d
 
 We assume that docker image for open source artifactory is being pulled from [jfrog.com](https://www.jfrog.com/open-source/).
 
-Now use docker run command with port mapping to run artifatcory docker container.
-
-```
-docker run -idt --name artifactory -p 8081:8081 docker.bintray.io/jfrog/artifactory-oss
-```
-
 Artifactory should come up on the following URL.
 
 *http://ARTIFACTORY_URL:8081/artifactory*

@@ -86,7 +86,7 @@ https://github.com/initcron/CI-Vertx.git
 
 ## Let's Build the Image
 
-* This job has **one more** *Build step*.
+* This job has one *Build step*.
 
 * Select **Execute shell** from the drop down menu and put the following content.
 
