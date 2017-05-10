@@ -191,6 +191,6 @@ Replace **<YOUR_DOCKER_ID>** and **<YOUR_IMAGE_NAME>** with your own values.
 If everything goes well, this job will create a Docker image and push it to DockerHub registry.
 
 ----
-:point_left:[**Prev** Chapter 12: Creating Package  Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/120_create_package_job.md)
+:point_left:[**Prev** Chapter 13: Deploy Application to Tomcat](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/130_deploy_to_tomcat.md)
 
-:point_right: [**Next** Chapter 14: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/140_Deploy_with_Docker_compose.md)
+:point_right: [**Next** Chapter 15: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/150_Deploy_with_Docker_compose.md)

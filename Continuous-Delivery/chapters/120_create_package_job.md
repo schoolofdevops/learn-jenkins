@@ -19,4 +19,4 @@ In **Files to archive** section, set *target/*.war* as a value.
 ----
 :point_left:[**Prev** Chapter 11: Static Code Analysis with SonarQube](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/110_static_code_analysis_with_sonarqube.md)
 
-:point_right: [**Next** Chapter 13: Docker Hub Registry Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/130_create_docker_image.md)
+:point_right: [**Next** Chapter 13: Deploy Application to Tomcat Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/Continuous-Delivery/chapters/130_deploy_to_tomcat.md)
