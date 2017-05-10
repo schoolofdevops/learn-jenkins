@@ -59,6 +59,6 @@ Once build is finished, click on the build number which starts with # . Clicking
 ![Console Output](images/chap4/console_output.jpg)
 
 ----
-:point_left:[**Prev** Chapter 3: Jenkins Systems Configurations](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/030_configure_jenkins.md)
+:point_left:[**Prev** Chapter 3: Jenkins Systems Configurations](https://github.com/schoolofdevops/learn-jenkins/blob/vertx-v1/continuous-delivery/chapters/030_configure_jenkins.md)
 
-:point_right: [**Next** Chapter 5: Adding Build Triggers ](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/050_add_build_triggers.md)
+:point_right: [**Next** Chapter 5: Adding Build Triggers ](https://github.com/schoolofdevops/learn-jenkins/blob/vertx-v1/continuous-delivery/chapters/050_add_build_triggers.md)
