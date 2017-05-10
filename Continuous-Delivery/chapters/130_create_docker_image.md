@@ -5,13 +5,90 @@ Now our application is ready to be used as a result of successful Package job ru
 * Copy the artifact from the package job  
 * Build a Docker image with our application in it.
 
-(**Prerequisite: Visit hub.docker.com and create a DockerHub account if you don't have one already.**)
+## Pre-requisites
+(**Note: Visit hub.docker.com and create a DockerHub account if you don't have one already.**)
 
-## Docker-Image Job
+### Requisite 1
+
+#### Install Copy Artifacts Plugin
 
 * Before creating this job, please install **copy artifacts plugin** which is also a prerequisite.
 
 ![plugin](images/docker-image/plugin.jpg)
+
+### Requisite 2
+
+#### Fork the docker repository
+
+* Fork the following repository.
+
+```
+https://github.com/initcron/CI-Vertx.git
+```
+
+* This repository consists of one **Dockerfile** which you need to update.
+
+* Let us see what this Dockerfile does,
+
+### Requisite 3
+
+#### The Dockerfile
+
+* The Dockerfile is very simple and has only three steps.
+
+```
+FROM tomcat:latest
+ADD target/CMADSession*.war /usr/local/tomcat/webapps/cmad.war
+ADD setenv.sh /usr/local/tomcat/bin/setenv.sh
+```
+
+`Line 1`
+
+```
+FROM tomcat:latest
+```
+
+We are building our image with *official tomcat* image as a **Base image**.
+
+`Line 2`
+
+```
+ADD CMADSession*.war.war /usr/local/tomcat/webapps/cmad.war
+```
+
+Here we copy our application from the host to container.
+
+`Line 3`
+
+```
+ADD setenv.sh /usr/local/tomcat/bin/setenv.sh
+```
+
+Like the previous step, we add a script inside the image. The purpose of this script is to decrease the launch time of the application.
+
+### Requisite 4
+
+#### Login to Dockerhub
+
+* Before running the job, we need to do one more thing.
+
+* In your docker host, run the following command.
+
+```
+docker exec -it jenkins bash
+
+sudo docker login
+
+(You will be asked for Username and Password)
+
+username: <YOUR_DOCKER_ID>
+
+password: <YOUR_PASSWORD>
+```
+
+* After this, you can just press **Ctrl + c** and exit out of the container.
+
+## Docker-Image Job
 
 * This time create a *freestyle project* named **Docker-Image**.
 
@@ -29,7 +106,7 @@ This repository has a Dockerfile and a script file (Just to set a Java opts prop
 
 * Click on apply project for now.
 
-## Build Environment
+### Build Environment
 
 ![clear](images/docker-image/clear.jpg)
 
@@ -41,7 +118,7 @@ This job requires workspace to be cleared before it runs. So,
 
 * In the second field add **target/*.war** as a pattern.
 
-## Copy the artifact from Package
+### Copy the artifact from Package
 
 ![last](images/docker-image/last1.jpg)
 
@@ -56,34 +133,7 @@ This job requires workspace to be cleared before it runs. So,
 * This will copy our application from Package job to Docker-Image job.
 
 
-## Build the Docker Image
-
-### Dockerfile
-
-* Before we build our Docker image, let us see what this Dockerfile does.
-
-* It is very simple and has only three steps.
-
-```
-FROM tomcat:latest
-```
-
-We are building our image with *official tomcat* image as a **Base image**.
-
-```
-ADD *.war /usr/local/tomcat/webapps/cmad.war
-```
-
-Here we copy our application from the host to container.
-
-```
-ADD setenv.sh /usr/local/tomcat/bin/setenv.sh
-```
-
-Like the previous step, we add a script inside the image. The purpose of this script is to decrease the launch time of the application.
-
-
-## Let's Build the Image
+### Let's Build the Image
 
 ![last](images/docker-image/last2.jpg)
 
@@ -105,29 +155,7 @@ Replace **<YOUR_DOCKER_ID>** and **<YOUR_IMAGE_NAME>** with your own values.
 
 * Then click on **Save**.
 
-
-
-## One last thing
-
-* Before running the job, we need to do one more thing.
-
-* In your docker host, run the following command.
-
-```
-docker exec -it jenkins bash
-
-sudo docker login
-
-(You will be asked for Username and Password)
-
-username: <YOUR_DOCKER_ID>
-
-password: <YOUR_PASSWORD>
-```
-
-* After this, you can just press **Ctrl + c** and exit out of the container.
-
-* Now you can visit the Jenkins console and **run the Docker-Image job**
+* Now you can **run the Docker-Image job**
 
 If everything goes well, this job will create a Docker image and push it to DockerHub registry.
 
