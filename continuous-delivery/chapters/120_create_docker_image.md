@@ -2,25 +2,17 @@
 
 Now our application is ready to be used as a result of successful Package job run. In this chapter, we are going to...
 
-* Copy the artifact from the package job  
 * Build a Docker image with our application in it.
 
 ## Pre-requisites
 (**Note: Visit hub.docker.com and create a DockerHub account if you don't have one already.**)
 
-### Requisite 1
+### Pre Requisite 1
 
-#### Edit the dockerfile in the forked repository
+#### Write the Dockerfile
 
-* The repository you forked in the **Creating Java Build** chapter consists of one **Dockerfile** which you need to update.
-
-* Let us see what this Dockerfile does,
-
-### Requisite 2
-
-#### The Dockerfile
-
-* The Dockerfile is very simple and has only three steps.
+* You should have created a Dockerfile by now which should be part of the application source code.
+* A sample Dockerfile is as follows
 
 ```
 FROM schoolofdevops/voteapp-mvn:v0.1.0
@@ -55,7 +47,7 @@ Long Answer:
 
 ### Requisite 3
 
-#### Login to Dockerhub
+#### Login to Dockerhub from inside Jenkins Container 
 
 * Before running the job, we need to do one more thing.
 
@@ -75,9 +67,9 @@ password: <YOUR_PASSWORD>
 
 * After this, you can just press **Ctrl + c** and exit out of the container.
 
-## Docker-Image Job
+## Create "Build Docker Image" Job
 
-* This time create a *freestyle project* named **Docker-Image**.
+* This time create a *freestyle project* named **Build Docker Image**.
 
 * In *Source Code Management* step, add **YOUR** git repository.
 
@@ -86,7 +78,7 @@ eg:
 https://github.com/initcron/CI-Vertx.git
 ```
 
-* In *Build Trigger*, add **test** as a trigger.
+* In *Build Trigger*, add **Unit Test** as a trigger.
 
 ![repo](images/docker-image/repo.jpg)
 
