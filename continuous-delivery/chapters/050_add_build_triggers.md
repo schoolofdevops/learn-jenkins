@@ -46,6 +46,9 @@ jenkins_homepage -> people -> admin -> configure
 user:<API_TOKEN><Jenkins_URL>/job/job1/build?token=<JOB_TOKEN>
 ```
 
+```
+Example: http://admin:552dab89b070c0fcc3fad281c51318ad@10.40.1.14:8080/job/job1/build?token=mytoken
+```
 * This will trigger the build.
 
 ![remote1](images/chap5/trigger.jpg)
