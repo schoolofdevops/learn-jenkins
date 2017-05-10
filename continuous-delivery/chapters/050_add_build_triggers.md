@@ -17,6 +17,42 @@ From project page, click on **Configure**.
 
 Jobs can be triggered remotely outside of jenkins. This is very useful when you would like the jobs to be triggered based on some event or part of the logic you have written as part of your script. This is also the way you would trigger the job based on the activities performed on the repositories. e.g. adding new commit to git hub.
 
+### Example:
+* Click on *job1* and then select Confgure
+
+* In **Build Trigger**, check **Trigger Builds remotely**.
+
+![remote1](images/chap5/remote.jpg)
+
+* Define a token (More complex one than the example)
+
+* Save the job.
+
+* To trigger the job, you need two things
+  * user
+  * user's API token
+
+* We will use admin user's API token to trigger this job. You can find this at
+
+```
+jenkins_homepage -> people -> admin -> configure
+```
+
+![flow](images/chap5/flow.gif)
+
+* Visit the trigger from browser or use curl
+
+```
+user:<API_TOKEN><Jenkins_URL>/job/job1/build?token=<JOB_TOKEN>
+```
+
+```
+Example: http://admin:552dab89b070c0fcc3fad281c51318ad@10.40.1.14:8080/job/job1/build?token=mytoken
+```
+* This will trigger the build.
+
+![remote1](images/chap5/trigger.jpg)
+
 ## Building Jobs Pipeline
 
 One of the important features of Jenkins is its ability to build a pipeline of jobs, whereas based on the outcome of one job, another can be triggered.  e.g. only if you are able to compile the code, you may want to proceed with testing, else its quiet useless to do so. Using **Build after other projects are built** trigger, this can be easily achieved.  We will be creating a job pipeline using this feature in the next chapter.
