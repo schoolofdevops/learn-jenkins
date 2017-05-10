@@ -1,7 +1,7 @@
 version: '3'
 services:
   jenkins:
-    image: schoolofdevops/jenkins_ansible:v0.1.4
+    image: schoolofdevops/jenkins:2.19.4-debian
     ports:
       - "8080:8080"
       - "50000:50000"
