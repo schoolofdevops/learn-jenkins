@@ -128,6 +128,6 @@ docker restart sonarqube
   ![Jenkins_sonar_fail](images/chap11/3.png)
 
 ----
-:point_left:[**Prev** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/100_creating_test_job.md)
+:point_left:[**Prev** Chapter 10: Creating Test Job](https://github.com/schoolofdevops/learn-jenkins/blob/vertx-v1/continuous-delivery/chapters/100_creating_test_job.md)
 
-:point_right: [**Next** Chapter 12: Creating Package  Job](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/120_create_package_job.md)
+:point_right: [**Next** Chapter 12: Create Docker Image Job](https://github.com/schoolofdevops/learn-jenkins/blob/vertx-v1/continuous-delivery/chapters/120_create_docker_image.md)
