@@ -16,7 +16,25 @@ Now our application is ready to be used as a result of successful Package job ru
 
 ![plugin](images/docker-image/plugin.jpg)
 
-### Requisite 2
+### Pre Requisite 2 - Set up Docker Environment for Jenkins
+
+* Install CloudBees Docker Build and Publish Plugin
+
+![docker](images/docker-image/docker.jpg)
+
+* After installing that plugin, go to `Credentials => global(global domain) => Add credentials => fill in the details
+
+![creds](images/docker-image/cred1.jpg)
+
+![creds](images/docker-image/cred2.jpg)
+
+![creds](images/docker-image/cred3.jpg)
+
+![creds](images/docker-image/creds4.jpg)
+
+* Now go back to Jenkins Main Page
+
+### Requisite 3
 
 #### Fork the docker repository
 
@@ -30,7 +48,7 @@ https://github.com/initcron/CI-Vertx.git
 
 * Let us see what this Dockerfile does,
 
-### Requisite 3
+### Requisite 4
 
 #### The Dockerfile
 
@@ -64,29 +82,15 @@ Here we copy our application from the host to container.
 ADD setenv.sh /usr/local/tomcat/bin/setenv.sh
 ```
 
-Like the previous step, we add a script inside the image. The purpose of this script is to decrease the launch time of the application.
+Like the previous step, we add a script inside the image. The purpose of this script is to decrease the launch time of the application. The script has following contents.
 
-### Requisite 4
-
-#### Login to Dockerhub
-
-* Before running the job, we need to do one more thing.
-
-* In your docker host, run the following command.
 
 ```
-docker exec -it jenkins bash
-
-sudo docker login
-
-(You will be asked for Username and Password)
-
-username: <YOUR_DOCKER_ID>
-
-password: <YOUR_PASSWORD>
+# Fast up the server boot process
+export JAVA_OPTS="$JAVA_OPTS -Djava.security.egd=file:/dev/./urandom"
 ```
 
-* After this, you can just press **Ctrl + c** and exit out of the container.
+
 
 ## Docker-Image Job
 
@@ -130,59 +134,18 @@ This job requires workspace to be cleared before it runs. So,
 
 * This will copy our application from Package job to Docker-Image job.
 
-## Build the Docker Image
-
-### Dockerfile
-
-* Before we build our Docker image, let us see what this Dockerfile does.
-
-* It is very simple and has only three steps.
-
-```
-FROM tomcat:latest
-```
-
-We are building our image with *official tomcat* image as a **Base image**.
-
-```
-ADD *.war /usr/local/tomcat/webapps/cmad.war
-```
-
-Here we copy our application from the host to container.
-
-```
-ADD setenv.sh /usr/local/tomcat/bin/setenv.sh
-```
-
-Like the previous step, we add a script inside the image. The purpose of this script is to decrease the launch time of the application.
-
-You will also have to create **setenv.sh** with the following content
-
-```
-# Fast up the server boot process
-export JAVA_OPTS="$JAVA_OPTS -Djava.security.egd=file:/dev/./urandom"
-```
-
 
 ## Let's Build the Image
 
-![last](images/docker-image/last2.jpg)
+* This job has one *Build step*.
 
-* This job has **one more** *Build step*.
+* Select **Docker Build and Publish** from the Build step
 
-* Select **Execute shell** from the drop down menu and put the following content.
+![docker-plugin](images/docker-image/docker-plugin.jpg)
 
-```
-sudo docker build -t <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest .
+* Add the following details in the fields.
 
-sudo docker push <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest
-```
-
-Replace **<YOUR_DOCKER_ID>** and **<YOUR_IMAGE_NAME>** with your own values.
-
-* Your build steps should look like this.
-
-![last](images/docker-image/last.jpg)
+![docker-plugin](images/docker-image/docker-plugin2.jpg)
 
 * Then click on **Save**.
 
@@ -190,7 +153,8 @@ Replace **<YOUR_DOCKER_ID>** and **<YOUR_IMAGE_NAME>** with your own values.
 
 If everything goes well, this job will create a Docker image and push it to DockerHub registry.
 
+
 ----
 :point_left:[**Prev** Chapter 13: Deploy Application to Tomcat](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/130_deploy_to_tomcat.md)
 
-:point_right: [**Next** Chapter 15: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/150_Deploy_with_Docker_compose.md)
+:point_right: [**Next** Chapter 15: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/150_deploy_with_docker_compose.md)
