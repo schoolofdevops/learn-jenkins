@@ -7,11 +7,13 @@ Now our application is ready to be used as a result of successful Package job ru
 ## Pre-requisites
 (**Note: Visit hub.docker.com and create a DockerHub account if you don't have one already.**)
 
-### Set up Docker Environment for Jenkins
+### Pre Requisite 1 - Install CloudBees Plugin
 
-* Install CloudBees Docker Build and Publish Plugin
+* Install **CloudBees Docker Build** and Publish Plugin
 
 ![docker](images/docker-image/docker.jpg)
+
+### Pre Requisite 2 - Set up Docker Environment for Jenkins
 
 * After installing that plugin, go to `Credentials => global(global domain) => Add credentials => fill in the details
 
@@ -26,9 +28,7 @@ Now our application is ready to be used as a result of successful Package job ru
 * Now go back to Jenkins Main Page
 
 
-### Pre Requisite 2
-
-#### Write the Dockerfile
+### Pre Requisite 3 - Write the Dockerfile
 
 * You should have created a Dockerfile by now which should be part of the application source code.
 * A sample Dockerfile is as follows
