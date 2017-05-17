@@ -157,4 +157,4 @@ If everything goes well, this job will create a Docker image and push it to Dock
 ----
 :point_left:[**Prev** Chapter 13: Deploy Application to Tomcat](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/130_deploy_to_tomcat.md)
 
-:point_right: [**Next** Chapter 15: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/150_Deploy_with_Docker_compose.md)
+:point_right: [**Next** Chapter 15: Deploy application Using Docker Compose ](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/150_deploy_with_docker_compose.md)
