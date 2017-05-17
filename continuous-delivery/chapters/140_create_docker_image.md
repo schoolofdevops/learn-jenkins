@@ -162,29 +162,22 @@ export JAVA_OPTS="$JAVA_OPTS -Djava.security.egd=file:/dev/./urandom"
 
 ## Let's Build the Image
 
-![last](images/docker-image/last2.jpg)
+* This job has one *Build step*.
 
-* This job has **one more** *Build step*.
+* Select **Docker Build and Publish** from the Build step
 
-* Select **Execute shell** from the drop down menu and put the following content.
+![docker-plugin](images/docker-image/docker-plugin.jpg)
 
-```
-sudo docker build -t <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest .
+* Add the following details in the fields.
 
-sudo docker push <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest
-```
-
-Replace **<YOUR_DOCKER_ID>** and **<YOUR_IMAGE_NAME>** with your own values.
-
-* Your build steps should look like this.
-
-![last](images/docker-image/last.jpg)
+![docker-plugin](images/docker-image/docker-plugin2.jpg)
 
 * Then click on **Save**.
 
 * Now you can **run the Docker-Image job**
 
 If everything goes well, this job will create a Docker image and push it to DockerHub registry.
+
 
 ----
 :point_left:[**Prev** Chapter 13: Deploy Application to Tomcat](https://github.com/schoolofdevops/learn-jenkins/blob/master/continuous-delivery/chapters/130_deploy_to_tomcat.md)
