@@ -16,7 +16,25 @@ Now our application is ready to be used as a result of successful Package job ru
 
 ![plugin](images/docker-image/plugin.jpg)
 
-### Requisite 2
+### Pre Requisite 2 - Set up Docker Environment for Jenkins
+
+* Install CloudBees Docker Build and Publish Plugin
+
+![docker](images/docker-image/docker.jpg)
+
+* After installing that plugin, go to `Credentials => global(global domain) => Add credentials => fill in the details
+
+![creds](images/docker-image/cred1.jpg)
+
+![creds](images/docker-image/cred2.jpg)
+
+![creds](images/docker-image/cred3.jpg)
+
+![creds](images/docker-image/creds4.jpg)
+
+* Now go back to Jenkins Main Page
+
+### Requisite 3
 
 #### Fork the docker repository
 
@@ -30,7 +48,7 @@ https://github.com/initcron/CI-Vertx.git
 
 * Let us see what this Dockerfile does,
 
-### Requisite 3
+### Requisite 4
 
 #### The Dockerfile
 
@@ -65,28 +83,6 @@ ADD setenv.sh /usr/local/tomcat/bin/setenv.sh
 ```
 
 Like the previous step, we add a script inside the image. The purpose of this script is to decrease the launch time of the application.
-
-### Requisite 4
-
-#### Login to Dockerhub
-
-* Before running the job, we need to do one more thing.
-
-* In your docker host, run the following command.
-
-```
-docker exec -it jenkins bash
-
-sudo docker login
-
-(You will be asked for Username and Password)
-
-username: <YOUR_DOCKER_ID>
-
-password: <YOUR_PASSWORD>
-```
-
-* After this, you can just press **Ctrl + c** and exit out of the container.
 
 ## Docker-Image Job
 
