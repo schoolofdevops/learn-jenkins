@@ -8,19 +8,19 @@ Now our application is ready to be used as a result of successful Package job ru
 ## Pre-requisites
 (**Note: Visit hub.docker.com and create a DockerHub account if you don't have one already.**)
 
-### Requisite 1
-
-#### Install Copy Artifacts Plugin
+### Requisite 1 - Install Copy Artifacts Plugin
 
 * Before creating this job, please install **copy artifacts plugin** which is also a prerequisite.
 
 ![plugin](images/docker-image/plugin.jpg)
 
-### Pre Requisite 2 - Set up Docker Environment for Jenkins
+### Requisite 2 - Install CloudBees Docker Plugin
 
-* Install CloudBees Docker Build and Publish Plugin
+* Install **CloudBees Docker Build** and Publish Plugin
 
 ![docker](images/docker-image/docker.jpg)
+
+### Requisite 3 - Set up Docker Environment for Jenkins
 
 * After installing that plugin, go to `Credentials => global(global domain) => Add credentials => fill in the details
 
@@ -34,9 +34,7 @@ Now our application is ready to be used as a result of successful Package job ru
 
 * Now go back to Jenkins Main Page
 
-### Requisite 3
-
-#### Fork the docker repository
+### Requisite 4 - Fork the docker repository
 
 * Fork the following repository.
 
@@ -48,9 +46,7 @@ https://github.com/initcron/CI-Vertx.git
 
 * Let us see what this Dockerfile does,
 
-### Requisite 4
-
-#### The Dockerfile
+### Requisite 5 - The Dockerfile
 
 * The Dockerfile is very simple and has only three steps.
 
