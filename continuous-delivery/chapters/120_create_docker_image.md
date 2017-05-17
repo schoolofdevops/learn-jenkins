@@ -7,7 +7,26 @@ Now our application is ready to be used as a result of successful Package job ru
 ## Pre-requisites
 (**Note: Visit hub.docker.com and create a DockerHub account if you don't have one already.**)
 
-### Pre Requisite 1
+### Set up Docker Environment for Jenkins
+
+* Install CloudBees Docker Build and Publish Plugin
+
+![docker](images/docker-image/docker.jpg)
+
+* After installing that plugin, go to `Credentials => global(global domain) => Add credentials => fill in the details
+
+![creds](images/docker-image/cred1.jpg)
+
+![creds](images/docker-image/cred2.jpg)
+
+![creds](images/docker-image/cred3.jpg)
+
+![creds](images/docker-image/creds4.jpg)
+
+* Now go back to Jenkins Main Page
+
+
+### Pre Requisite 2
 
 #### Write the Dockerfile
 
@@ -88,17 +107,13 @@ https://github.com/initcron/CI-Vertx.git
 
 * This job has one *Build step*.
 
-* Select **Execute shell** from the drop down menu and put the following content.
+* Select **Docker Build and Publish** from the Build step
 
-```
-docker build -t <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest .
+![docker-plugin](images/docker-image/docker-plugin.jpg)
 
-docker push <YOUR_DOCKER_ID>/<YOUR_IMAGE_NAME>:latest
-```
+* Add the following details in the fields.
 
-![last](images/docker-image/last.jpg)
-
-Replace **<YOUR_DOCKER_ID>** and **<YOUR_IMAGE_NAME>** with your own values.
+![docker-plugin](images/docker-image/docker-plugin2.jpg)
 
 * Then click on **Save**.
 
