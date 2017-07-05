@@ -69,8 +69,3 @@ Create Admin user
 Now we have successfully installed Jenkins and we can proceed with configurations
 
 ![Final](images/chap2/Complete_Install.png)
-
------
-:point_left:[**Prev** Chapter 1: Introduction](https://github.com/schoolofdevops/learn-jenkins/blob/vertx-v1/continuous-delivery/chapters/010_introduction.md)
-
-:point_right: [**Next** Chapter 3: Configure Jenkins](https://github.com/schoolofdevops/learn-jenkins/blob/vertx-v1/continuous-delivery/chapters/030_configure_jenkins.md)
