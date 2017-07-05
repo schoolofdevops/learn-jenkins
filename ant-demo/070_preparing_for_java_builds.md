@@ -1,8 +1,8 @@
 # Preparing to build Java  Projects
 
-After building a pipeline with mock jobs, we are going to start creating a workflow with a real code. And we will select a java project which gets built with Maven, a java based build tool. Running java builds with maven would require additional preparations. Maven should be installed and available on the Jenkins hosts along with the JDK. Lets Install JDK and Maven from the Jenkins dashboard.
+After building a pipeline with mock jobs, we are going to start creating a workflow with a real code. And we will select a java project which gets built with Ant, a java based build tool. Running java builds with Ant would require additional preparations. Ant should be installed and available on the Jenkins hosts along with the JDK. Lets Install JDK and Ant from the Jenkins dashboard.
 
-## Configure JDK and Maven
+## Configure JDK and Ant
 
 ### Option 1: Configuring Existing OpenJDk
 
@@ -40,15 +40,15 @@ After building a pipeline with mock jobs, we are going to start creating a workf
 
 Ant configurations are similar to JDK above, its actually simpler than JDK.
 
-To have Maven installed automatically,
+To have Ant installed automatically,
 * Click on **Ant Installations** from the Jenkins Systems Configurations page.
 
 *  Provide a name to the instance of Ant being installed e.g. "Ant 1.9.9".
 
 * Check  "Install automatically" box. Click on save.
 
-![Adding Maven](images/chap7/ant.jpg)
+![Adding Ant](images/chap7/ant.jpg)
 
 Thats it. Ant and JDK will automatically be installed when you create a project with java build.
 
-**Note:** JDK and Ant are not immediately Installed after providing these configurations. Jenkins would call the procedures to install these when you create a Job which uses JDK/Maven.
+**Note:** JDK and Ant are not immediately Installed after providing these configurations. Jenkins would call the procedures to install these when you create a Job which uses JDK/Ant.
