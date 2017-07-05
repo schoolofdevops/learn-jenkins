@@ -51,4 +51,4 @@ To have Maven installed automatically,
 
 Thats it. Ant and JDK will automatically be installed when you create a project with java build.
 
-**Note:** JDK and Maven are not immediately Installed after providing these configurations. Jenkins would call the procedures to install these when you create a Job which uses JDK/Maven.
+**Note:** JDK and Ant are not immediately Installed after providing these configurations. Jenkins would call the procedures to install these when you create a Job which uses JDK/Maven.
