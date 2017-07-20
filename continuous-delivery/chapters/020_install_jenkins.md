@@ -80,7 +80,6 @@ Create Admin user
 
 Now we have successfully installed Jenkins and we can proceed with configurations
 
-![Final](images/chap2/Complete_Install.png)
 
 
 
