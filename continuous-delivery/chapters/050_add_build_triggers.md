@@ -32,7 +32,7 @@ Jobs can be triggered remotely outside of jenkins. This is very useful when you 
   * user
   * user's API token
 
-* We will use admin user's API token to trigger this job. You can find this at
+* We will use admin (first user we created)  user's API token to trigger this job. You can find this at
 
 ```
 jenkins_homepage -> people -> admin -> configure
@@ -40,10 +40,13 @@ jenkins_homepage -> people -> admin -> configure
 
 ![flow](images/chap5/flow.gif)
 
+
+Click on **Show API Token** Note down the user's API token. 
+
 * Visit the trigger from browser or use curl
 
 ```
-user:<API_TOKEN><Jenkins_URL>/job/job1/build?token=<JOB_TOKEN>
+user:<API_TOKEN>@<Jenkins_URL>/job/job1/build?token=<JOB_TOKEN>
 ```
 
 ```
