@@ -10,11 +10,25 @@ After building a pipeline with mock jobs, we are going to start creating a workf
 
 * Scroll down to JDK section and click on **JDK Installations**. Provide a name to the instance of java e.g. "OpenJDK 8".
 
-* Uncheck **Install Automatically** and provide JAVA_HOME e.g.  /usr/lib/jvm/java-8-openjdk-amd64
+* Uncheck **Install Automatically**
+* Provide JAVA_HOME  
+  e.g.  
+  **/usr/lib/jvm/java-8-openjdk-amd64**
+
+  (make sure there is no preceding blanck space in above path, when you paste it on jenkins)
+
+If you would like to find the exact value of JAVA_HOME, login to the Jenkins host and run any of the the following commands
+
+```
+echo $JAVA_HOME
+env | grep -i java
+```
 
 ![Adding JDK](images/chap7/openjdk.png)
 
 ### Option 2: Installing  Oracle Java
+
+[**Note**: You could skip this, if you have used **Option1** above]
 
 * If you don't have a existing JDK setup, you can install it from Jenkins itself.
 

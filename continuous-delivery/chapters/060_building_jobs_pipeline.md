@@ -13,7 +13,7 @@ For this tutorial, lets create jobs by name **job2** and **job3** which should b
 
 ![Jobs](images/chap6/3_jobs.jpg)
 
-At the end of this exercise, you should see 3 jobs listed on jenkins dashboard as above.
+At the end of this exercise, you should see 3 jobs listed on jenkins dashboard as above. While creating Job2 and Job3 for the first time, do not use any build triggers. We will update the configurations while defining upstream/downstream.
 
 ## Connecting jobs
 
