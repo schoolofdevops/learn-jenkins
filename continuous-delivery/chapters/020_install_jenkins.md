@@ -71,8 +71,7 @@ This will let you choose the plugins to install on the next page. On the selecti
   * Click on **None** to deselect all plugins
   ![Select None](images/chap2/select_none.png)
 
-  * Scroll to **Source Code Management** and select **Git Plugin**. Click on **Install** button.
-  ![Git Plugin](images/chap2/install_git.png)
+
 
 Create Admin user
 

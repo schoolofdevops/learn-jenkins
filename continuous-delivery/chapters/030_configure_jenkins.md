@@ -10,21 +10,16 @@ When you login to jenkins for the first time, following is the screen you would 
 * Bottom right of the page is the information about jenkins version displayed.
 
 ## Configuring Global Security
-
 * Select  Manage Jenkins -> Configure Global Security
-* Select checkbox for "Enable Security"
-* From Security Realm, select "Jenkins own database"
-* Keep "Allow users to sign up" option checked
-* Click on **Apply** button
+* Verify
+  * checkbox for "Enable Security" is checked
+  * From Security Realm,  "Jenkins own database" is selected
+  * Authorization is set to "Logged in users can do anything"
 
-![Configure Global Security](images/configurations/Configure_Global_Security.jpg)
+Observe the configs  and verify as per the screenshot attached below
 
-## Sign up and Log in
+![Configure Global Security](images/configurations/default_sec_configs.png)
 
- * From top right corner, click on "Sign Up"
- * Fill in the form and click on Sign Up button.
- * This will create and account and automatically sign you in.
- * Since the signed up users have complete access to jenkins, you could proceed with rest of the configurations or start creating jobs.
 
 
 ## Plugins
