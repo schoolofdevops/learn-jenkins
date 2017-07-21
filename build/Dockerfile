@@ -16,14 +16,15 @@ RUN curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-co
 
 
 # Install Docker-Engine
-RUN apt-get install -yq apt-transport-https ca-certificates curl software-properties-common \ 
+RUN apt-get install -yq apt-transport-https ca-certificates curl software-properties-common \
     && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - \
-    && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" \ 
-    && apt-get update -yq \ 
-    && apt-get install -yq docker-ce \ 
-    && usermod -aG docker jenkins 
+    && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" \
+    && apt-get update -yq \
+    && apt-get install -yq docker-ce \
+    && usermod -aG docker jenkins
 
 # Change to Jenkins User
 USER jenkins
 
-#ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+ENTRYPOINT [ "/usr/local/bin/entrypoint.sh"]
