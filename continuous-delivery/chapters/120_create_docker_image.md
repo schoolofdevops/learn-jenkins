@@ -15,52 +15,20 @@ Now our application is ready to be used as a result of successful Package job ru
 
 * After installing that plugin, go to `Credentials => global(global domain) => Add credentials => fill in the details
 
-![creds](images/docker-image/cred1.jpg)
+![creds](images/docker-image/cred1.png)
 
-![creds](images/docker-image/cred2.jpg)
+![creds](images/docker-image/cred2.png)
 
-![creds](images/docker-image/cred3.jpg)
+![creds](images/docker-image/cred3.png)
 
 ![creds](images/docker-image/creds4.jpg)
 
 * Now go back to Jenkins Main Page
 
 
-### Pre Requisite 2 - Write the Dockerfile
+### Pre Requisite 2 - Dockerfile
 
 * You should have created a Dockerfile by now which should be part of the application source code.
-* A sample Dockerfile is as follows
-
-```
-FROM schoolofdevops/voteapp-mvn:v0.1.0
-
-USER root
-
-WORKDIR /code
-
-ADD pom.xml /code/pom.xml
-RUN ["mvn", "dependency:resolve"]
-RUN ["mvn", "verify"]
-
-# Adding source, compile and package into a fat jar
-ADD src/main /code/src/main
-RUN ["mvn", "package"]
-RUN chmod a+rwx target/cmad-advanced-staging-demo-fat.jar
-
-CMD ["java", "-jar", "target/cmad-advanced-staging-demo-fat.jar", "-cluster"]
-```
-
-`What this Dockerfile does?`
-
-```
-Short Answer:
-  This Dockerfile creates a Docker image which has the source code, packaged application and command which will be executed at the start of a container
-```
-
-```
-Long Answer:
-  This Dockerfile uses a custom Docker image (voteapp-mvn) as base. Then we copy the source code. After that we run couple of Maven (dependency resolve and package) commands to get the package. Finally we run java -jar application.jar to get our application up and running.
-```
 
 ## Create "Build Docker Image" Job
 
@@ -70,16 +38,17 @@ Long Answer:
 
 ```
 eg:
-https://github.com/initcron/CI-Vertx.git
+https://github.com/initcron/demo.git
 ```
 
-* In *Build Trigger*, add **Unit Test** as a trigger.
+[Replace the above with your own repo URI]
 
-![repo](images/docker-image/repo.jpg)
+* In *Build Trigger*, add the previous job e.g. **Static Analysis** as a trigger.
+
 
 * Click on apply project for now.
 
-## Let's Build the Image
+## Build and Publish Docker Image
 
 * This job has one *Build step*.
 
@@ -88,8 +57,11 @@ https://github.com/initcron/CI-Vertx.git
 ![docker-plugin](images/docker-image/docker-plugin.jpg)
 
 * Add the following details in the fields.
-
+  * Repository Name (e.g. username/repo)
+  * Tag (e.g. staging)
+  * Docker Host URI :  unix:///var/run/docker.sock
 ![docker-plugin](images/docker-image/docker-plugin2.jpg)
+
 
 * Then click on **Save**.
 
