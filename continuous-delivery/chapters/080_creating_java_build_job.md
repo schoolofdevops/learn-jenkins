@@ -12,12 +12,9 @@ To create a build project,
 
 * From New Item, select **Maven Project** and provide it a name e.g. "build".
 
-* And also if you are using Jenkins as a service on the host (installed using a deb file or using package manager), you need to install git and docker as well.
+**Note**: If you do not see **Maven Project** option on the job creation page, install **Maven Integration Plugin** from plugins manager.
 
-```
-sudo apt-get install git
-sudo apt-get install docker-engine
-```
+
 
 ![Maven Project](images/chap8/maven_proj.png)
 
@@ -30,7 +27,7 @@ e.g. https://github.com/schoolofdevops/demo
 From **Build Triggers** select **Poll SCM**. Lets configure it to poll every 5 minutes using the following schedule
 
 ```
-H/5 * * * *
+H/2 * * * *
 ```
 
 ![Poll SCM](images/chap8/poll_scm.png)

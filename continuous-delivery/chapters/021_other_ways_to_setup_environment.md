@@ -140,3 +140,11 @@ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 sudo yum install jenkins
 sudo service jenkins start
 ```
+
+### Installing Docker
+Since this tutorial uses docker to deploy application, its essential to install **Docker** and **Docker Compose**.
+
+Refer to the following resources to install Docker
+
+[Docker Installation Guide](https://docs.docker.com/engine/installation/)
+[Docker Compose Installation Guide](https://docs.docker.com/compose/install/)

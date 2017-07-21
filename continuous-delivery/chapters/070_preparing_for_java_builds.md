@@ -2,7 +2,7 @@
 
 After building a pipeline with mock jobs, we are going to start creating a workflow with a real code. And we will select a java project which gets built with Maven, a java based build tool. Running java builds with maven would require additional preparations. Maven should be installed and available on the Jenkins hosts along with the JDK. Lets Install JDK and Maven from the Jenkins dashboard.
 
-## Configure JDK and Maven
+## Configure JDK
 
 ### Option 1: Configuring Existing OpenJDk
 
@@ -15,7 +15,7 @@ After building a pipeline with mock jobs, we are going to start creating a workf
   e.g.  
   **/usr/lib/jvm/java-8-openjdk-amd64**
 
-  (make sure there is no preceding blanck space in above path, when you paste it on jenkins)
+  (make sure there is no preceding blank space in above path, when you paste it on jenkins)
 
 If you would like to find the exact value of JAVA_HOME, login to the Jenkins host and run any of the the following commands
 
@@ -50,7 +50,7 @@ env | grep -i java
 
 * Click on **Apply** button to save the configurations and continue with the next configurations on the same screen.
 
-### Configure Maven
+## Configure Maven
 
 Maven configurations are similar to JDK above, its actually simpler than JDK.
 
