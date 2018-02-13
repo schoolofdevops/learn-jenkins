@@ -1,4 +1,4 @@
-FROM jenkins:2.19.4
+FROM jenkins:2.60.3
 
 MAINTAINER vijayboopathy <vibe@initcron.org>
 
@@ -11,7 +11,7 @@ RUN apt update -y && \
     echo "jenkins    ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 # Install Docker Compose
-RUN curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose && \
+RUN curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose && \
     chmod +x /usr/local/bin/docker-compose
 
 
