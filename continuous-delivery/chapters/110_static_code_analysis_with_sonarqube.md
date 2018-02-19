@@ -72,8 +72,6 @@ Review Job Configurations
 
 * Add Git SCM Repository Configuration.
 
-* Check Resolve Artifacts from Artifactory from Build Environment. Provide the same configurations as build job that we configured earlier to connect with artifactory.
-
 * From Build Triggers, select **Build After Other Projects are Built** and provide dependency on "build".
 
 * From Build Environment , check  **Prepare SonarQube Scanner environment**. If you do not see this option, you will have to go back to system configurations, go to sonarqube server options and check the box which starts with "Enable injection of SonarQube....."
@@ -115,13 +113,13 @@ docker restart sonarqube
 
 * Login as admin in sonarqube console and create a new `Quality Gates` policy, name it as `strict`.
 
-* Here we are Choosing `code smells` and setting the value for `Warnings` and `Error`.
+* Choose "Lines of Code" metric and set appropriate warning and error values(like showed in the picture).
 
-  ![Quality Gate](images/chap11/1.png)
+  ![Quality Gate](images/chap11/new_sonar_rule.png)
 
 * Once the Build falls under the criteria it will fail with the help of build-breaker plugin that we installed.
 
-  ![Quality Gate](images/chap11/2.png)
+  ![Quality Gate](images/chap11/failed_sonar_build.png)
 
 * Thus the build is marked as failure and post build action will not be triggered.
 

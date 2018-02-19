@@ -46,7 +46,7 @@ Observe the configs  and verify as per the screenshot attached below
   ![Searching for Plugins](images/plugins/searching_for_plugins.jpg)
 
   * Scroll down till you see "Git Plugin" in the list, select it and click on "Download and install after restart"
-  ![Searching for Plugins](images/plugins/install_git_plugin.jpg)
+  ![Searching for Plugins](images/plugins/git_plugin_install_new.png)
 
   * If you don't see Git plugin in the available list then it might have got installed when we installed all the suggested plugins.
 
