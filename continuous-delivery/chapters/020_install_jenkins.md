@@ -22,7 +22,7 @@ After installing docker, pull our Jenkins docker image from [docker hub](https:/
 This is the simplest way of installing Jenkins and requires minimal efforts.
 
 ```
-docker run -idt --name jenkins  -v /var/run/docker.sock:/var/run/docker.sock  -p 8080:8080 -p 50000:50000 schoolofdevops/jenkins:2.19.4-deb-v3
+docker run -idt --name jenkins  -v /var/run/docker.sock:/var/run/docker.sock  -p 8080:8080 -p 50000:50000 schoolofdevops/jenkins
 ```
 
 If you install it using the instructions above, find out the IP address and go to http://YOUR_IP_ADDRESS:8080 to access jenkins UI.
