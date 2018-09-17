@@ -1,4 +1,4 @@
-FROM jenkins:2.60.3
+FROM jenkins/jenkins:2.138.1-slim
 
 MAINTAINER vijayboopathy <vibe@initcron.org>
 
