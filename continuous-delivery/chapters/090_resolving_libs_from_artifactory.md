@@ -15,7 +15,7 @@ We assume that docker image for open source artifactory is being pulled from [jf
 Now use docker run command with port mapping to run artifatcory docker container.
 
 ```
-docker run -idt --name artifactory -p 8081:8081 docker.bintray.io/jfrog/artifactory-oss
+docker run -idt --name artifactory -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-oss
 ```
 
 Artifactory should come up on the following URL.
